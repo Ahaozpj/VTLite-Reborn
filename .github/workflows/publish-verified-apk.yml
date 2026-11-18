@@ -62,7 +62,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m pip install --disable-pip-version-check gdown==5.2.0
-          gdown --id "$DRIVE_FILE_ID" -O "$APK_NAME" --quiet
+          gdown "$DRIVE_FILE_ID" -O "$APK_NAME" --quiet
           test "$(stat -c %s "$APK_NAME")" -eq "$EXPECTED_SIZE"
           printf '%s  %s\n' "$EXPECTED_SHA256" "$APK_NAME" | sha256sum --check --status
           unzip -tqq "$APK_NAME"
@@ -84,7 +84,7 @@ jobs:
           if ! gh release view "$TAG" >/dev/null 2>&1; then
             gh release create "$TAG" --target main --title "$RELEASE_NAME" --notes-file "$NOTES_FILE" --draft --prerelease
           fi
-          info=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" --jq ".assets[] | select(.name == \"$APK_NAME\") | [.size, .digest] | @tsv")
+          info=$(gh release view "$TAG" --json assets --jq ".assets[] | select(.name == \"$APK_NAME\") | [.size, .digest] | @tsv")
           if [ -n "$info" ]; then
             IFS=$'\t' read -r uploaded_size uploaded_digest <<< "$info"
             if [ "$uploaded_size" != "$EXPECTED_SIZE" ] || [ "$uploaded_digest" != "sha256:$EXPECTED_SHA256" ]; then
