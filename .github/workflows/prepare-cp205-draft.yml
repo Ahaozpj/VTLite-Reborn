@@ -1,0 +1,47 @@
+name: Prepare CP205 draft release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/prepare-cp205-draft.yml
+
+# GitHub's own ephemeral Actions token; no private keys, external secrets or APK.
+permissions:
+  contents: write
+
+jobs:
+  prepare-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out public release notes
+        uses: actions/checkout@v4
+
+      - name: Create draft release only if missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="v4850-cp205"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release $tag already exists; leaving it unchanged."
+          else
+            gh release create "$tag" \
+              --target main \
+              --title "VTLite Reborn — CP205 (4850)" \
+              --notes-file releases/CP205.md \
+              --draft \
+              --prerelease
+            echo "Draft release $tag created. No APK asset has been uploaded."
+          fi
+
+      - name: Verify draft state (never publish automatically)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view v4850-cp205 --json isDraft,isPrerelease,url --jq '{draft: .isDraft, prerelease: .isPrerelease, url: .url}'
