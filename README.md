@@ -19,7 +19,7 @@
 | **Релиз** | **CP205** · `v4850-cp205` |
 | **Android `versionCode`** | `4850` |
 | **Пакет** | `com.vtosters.reborn` |
-| **Статус** | Предварительная сборка, проверенная на реальном устройстве |
+| **Статус** | Опубликованная Pre-release, проверенная на реальном устройстве |
 | **Тестовое устройство** | RedMagic 8S Pro · Android 15 |
 
 ### ✅ Что удалось проверить
@@ -35,7 +35,8 @@
 
 ## ⬇️ Где скачать
 
-**[Открыть GitHub Releases](https://github.com/Ahaozpj/VTLite-Reborn/releases)**
+[**⬇️ Скачать CP205 APK напрямую**](https://github.com/Ahaozpj/VTLite-Reborn/releases/download/v4850-cp205/VTLite_Reborn_CP205_SameSigner_Update_v4850.apk)  
+[**📋 Все выпуски и описания**](https://github.com/Ahaozpj/VTLite-Reborn/releases)
 
 В опубликованном выпуске раскройте **Assets** и скачайте файл **`.apk`**. Автоматические архивы GitHub `Source code (zip)` и `Source code (tar.gz)` не предназначены для установки.
 
