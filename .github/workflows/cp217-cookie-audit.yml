@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/cp217-cookie-audit.yml'
       - 'research/cp217_dex_cookie_audit.py'
+      - 'research/cp217_cookie_call_edges.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,9 +30,18 @@ jobs:
           set -euo pipefail
           python3 research/cp217_dex_cookie_audit.py /tmp/cp217/VTLite_Reborn_CP205_SameSigner_Update_v4850.apk --sha256 e08a783a97a2a36bcfc86681750074b6b2ec9442cf0be3b593f0dc1eae3c0534 --size 78522511 --output cp217_report.md
           cat cp217_report.md
+      - name: Trace safe invoke targets of CookieHelper and logout chain
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check --quiet androguard==4.1.3
+          python3 research/cp217_cookie_call_edges.py /tmp/cp217/VTLite_Reborn_CP205_SameSigner_Update_v4850.apk cp217_call_edges.md
+          cat cp217_call_edges.md
       - name: Archive sanitized report (no APK or user session files)
         uses: actions/upload-artifact@v4
         with:
           name: cp217-offline-report
-          path: cp217_report.md
+          path: |
+            cp217_report.md
+            cp217_call_edges.md
           retention-days: 14
