@@ -1,0 +1,107 @@
+name: Publish verified APK release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-verified-apk.yml'
+      - 'releases/latest.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verified-release-publishing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout public release notes
+        uses: actions/checkout@v4
+
+      - name: Validate manifest
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, pathlib, re
+          m = json.loads(pathlib.Path('releases/latest.json').read_text(encoding='utf-8'))
+          rules = {
+              'tag': r'v[0-9]+-cp[0-9]+',
+              'apk_name': r'[A-Za-z0-9_.-]+[.]apk',
+              'drive_file_id': r'[A-Za-z0-9_-]{10,150}',
+              'sha256': r'[0-9a-f]{64}',
+              'notes_file': r'releases/[A-Za-z0-9_-]+[.]md',
+              'release_name': r'[^\r\n]{3,120}',
+          }
+          for key, pattern in rules.items():
+              assert isinstance(m.get(key), str) and re.fullmatch(pattern, m[key]), f'Invalid {key}'
+          assert pathlib.Path(m['notes_file']).is_file(), 'Release notes not found'
+          assert isinstance(m.get('apk_size_bytes'), int) and 1024 < m['apk_size_bytes'] < 2_000_000_000
+          assert isinstance(m.get('prerelease'), bool)
+          m['apk_size_bytes'] = str(m['apk_size_bytes'])
+          m['prerelease'] = str(m['prerelease']).lower()
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as o:
+              for key in ['tag', 'apk_name', 'drive_file_id', 'sha256', 'notes_file', 'release_name', 'apk_size_bytes', 'prerelease']:
+                  o.write(f'{key}={m[key]}\n')
+          print('Validated manifest for', m['tag'])
+          PY
+
+      - name: Download verified APK from public Drive file
+        shell: bash
+        env:
+          DRIVE_FILE_ID: ${{ steps.meta.outputs.drive_file_id }}
+          APK_NAME: ${{ steps.meta.outputs.apk_name }}
+          EXPECTED_SHA256: ${{ steps.meta.outputs.sha256 }}
+          EXPECTED_SIZE: ${{ steps.meta.outputs.apk_size_bytes }}
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check gdown==5.2.0
+          gdown --id "$DRIVE_FILE_ID" -O "$APK_NAME" --quiet
+          test "$(stat -c %s "$APK_NAME")" -eq "$EXPECTED_SIZE"
+          printf '%s  %s\n' "$EXPECTED_SHA256" "$APK_NAME" | sha256sum --check --status
+          unzip -tqq "$APK_NAME"
+          echo 'Exact size, SHA-256, and ZIP/APK integrity verified.'
+
+      - name: Upload APK to GitHub Release and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.meta.outputs.tag }}
+          APK_NAME: ${{ steps.meta.outputs.apk_name }}
+          EXPECTED_SHA256: ${{ steps.meta.outputs.sha256 }}
+          EXPECTED_SIZE: ${{ steps.meta.outputs.apk_size_bytes }}
+          NOTES_FILE: ${{ steps.meta.outputs.notes_file }}
+          RELEASE_NAME: ${{ steps.meta.outputs.release_name }}
+          PRERELEASE: ${{ steps.meta.outputs.prerelease }}
+        run: |
+          set -euo pipefail
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --target main --title "$RELEASE_NAME" --notes-file "$NOTES_FILE" --draft --prerelease
+          fi
+          info=$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" --jq ".assets[] | select(.name == \"$APK_NAME\") | [.size, .digest] | @tsv")
+          if [ -n "$info" ]; then
+            IFS=$'\t' read -r uploaded_size uploaded_digest <<< "$info"
+            if [ "$uploaded_size" != "$EXPECTED_SIZE" ] || [ "$uploaded_digest" != "sha256:$EXPECTED_SHA256" ]; then
+              echo 'Existing asset differs or lacks a verifiable digest; refusing to replace it.' >&2
+              exit 1
+            fi
+            echo 'Exact asset already uploaded; preserving it.'
+          else
+            gh release upload "$TAG" "$APK_NAME"
+            echo 'Uploaded verified APK as Release asset.'
+          fi
+          if [ "$PRERELEASE" = true ]; then
+            gh release edit "$TAG" --title "$RELEASE_NAME" --notes-file "$NOTES_FILE" --draft=false --prerelease
+          else
+            gh release edit "$TAG" --title "$RELEASE_NAME" --notes-file "$NOTES_FILE" --draft=false --prerelease=false
+          fi
+          gh release view "$TAG" --json isDraft,isPrerelease,assets,url --jq '{isDraft,isPrerelease,assetCount:(.assets|length),url}'
+          test "$(gh release view "$TAG" --json isDraft --jq .isDraft)" = false
+          test "$(gh release view "$TAG" --json assets --jq '.assets|length')" -ge 1
+
