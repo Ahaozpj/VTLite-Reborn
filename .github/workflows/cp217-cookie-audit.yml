@@ -1,0 +1,37 @@
+name: CP217 offline cookie/session inventory
+on:
+  push:
+    branches: [research/cp217-cookie-audit]
+    paths:
+      - '.github/workflows/cp217-cookie-audit.yml'
+      - 'research/cp217_dex_cookie_audit.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+      - name: Download the fixed CP205 reference release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/cp217
+          gh release download v4850-cp205 --repo "$GITHUB_REPOSITORY" --pattern 'VTLite_Reborn_CP205_SameSigner_Update_v4850.apk' --dir /tmp/cp217
+      - name: Verify SHA/size and inspect DEX classes (read-only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 research/cp217_dex_cookie_audit.py /tmp/cp217/VTLite_Reborn_CP205_SameSigner_Update_v4850.apk --sha256 e08a783a97a2a36bcfc86681750074b6b2ec9442cf0be3b593f0dc1eae3c0534 --size 78522511 --output cp217_report.md
+          cat cp217_report.md
+      - name: Archive sanitized report (no APK or user session files)
+        uses: actions/upload-artifact@v4
+        with:
+          name: cp217-offline-report
+          path: cp217_report.md
+          retention-days: 14
