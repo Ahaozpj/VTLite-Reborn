@@ -1,0 +1,10 @@
+{
+  "tag": "v4850-cp205",
+  "release_name": "VTLite Reborn — CP205 (4850)",
+  "notes_file": "releases/CP205.md",
+  "apk_name": "VTLite_Reborn_CP205_SameSigner_Update_v4850.apk",
+  "drive_file_id": "1fTTW9bL1-UgjQK5lLrOJlyXrYwTASW-K",
+  "apk_size_bytes": 78522511,
+  "sha256": "e08a783a97a2a36bcfc86681750074b6b2ec9442cf0be3b593f0dc1eae3c0534",
+  "prerelease": true
+}
