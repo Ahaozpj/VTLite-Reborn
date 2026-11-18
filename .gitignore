@@ -1,0 +1,37 @@
+# User accounts, app session data and credentials
+*.vtl
+*.db
+*.sqlite
+*.sqlite3
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.env
+.env.*
+*passphrase*
+*password*
+*token*
+*credentials*
+
+# APK and embedded proprietary app binaries are distributed as release assets only;
+# never commit binary payloads to the Git history.
+*.apk
+*.aab
+*.dex
+*.smali
+*.aar
+*.jar
+*.so
+
+# Local developer artifacts
+build/
+dist/
+out/
+*.log
+.DS_Store
+.idea/
+.gradle/
+local.properties
