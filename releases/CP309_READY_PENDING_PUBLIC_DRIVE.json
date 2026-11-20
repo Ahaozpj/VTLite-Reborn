@@ -1,0 +1,10 @@
+{
+  "tag": "v4911-cp309",
+  "release_name": "VTLite Reborn — CP309 (4911): исправление CAPTCHA, предварительный выпуск",
+  "notes_file": "releases/CP309.md",
+  "apk_name": "VTLite_Reborn_v4911_CP309_Captcha_Fix.apk",
+  "drive_file_id": "1na8M99L4pQkY-WKAk4CICZTdaN4s0HsK",
+  "apk_size_bytes": 80877408,
+  "sha256": "8e069785fbdd253686ccb9f47ec9e16d86e7b38481b3bee1461f2d5519c69e82",
+  "prerelease": true
+}
