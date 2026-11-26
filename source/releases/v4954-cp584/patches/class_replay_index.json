@@ -140,6 +140,24 @@
       ],
       "target_sha256": "2cdd813d77359789de4893c67f3c1f230c78c4585af873bd7bc3f0a3280b84d1"
     },
+    "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetByCacheHelper.smali": {
+      "patches": [
+        "replay_dialog_route_classes"
+      ],
+      "target_sha256": "7db6bb7bd7cd39d85ae3e6f783a29a947f3693abfebd3e2a99a54e65307009e9"
+    },
+    "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetByNetworkHelper$load$response$1.smali": {
+      "patches": [
+        "replay_dialog_route_classes"
+      ],
+      "target_sha256": "7b13c526e6d360bbc3bc308ea902d91ce047d472cdbf700a7872fba0b070436e"
+    },
+    "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetByNetworkHelper.smali": {
+      "patches": [
+        "replay_dialog_route_classes"
+      ],
+      "target_sha256": "69795aac61f0e7fdf2395b4ec1de6ebf9e8149ecbd436a08159af0f18df09c3b"
+    },
     "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetHistoryApiCmd$a.smali": {
       "patches": [
         "replay_preferences_media_classes"
@@ -187,6 +205,18 @@
         "replay_ui_classes"
       ],
       "target_sha256": "b657e962efe2cd7800eab41b8de3a780652893fc3f9ae54b991b020451fd6c0d"
+    },
+    "classes3/com/vk/im/ui/components/dialogs_list/DialogsListPresenter$c.smali": {
+      "patches": [
+        "replay_dialog_route_classes"
+      ],
+      "target_sha256": "7ae067a8b4cabf04ffd3a05bf704f27d1d24318338567346604860779edb9002"
+    },
+    "classes3/com/vk/im/ui/components/dialogs_list/LoadInitCmd.smali": {
+      "patches": [
+        "replay_dialog_route_classes"
+      ],
+      "target_sha256": "6cbe9d2f904032cef65ccb74264a19453b581aa352634fd52fb13cde60687971"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/TaskInvalidateHistoryViaCache.smali": {
       "patches": [
@@ -816,7 +846,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 140,
+  "patch_entries": 145,
   "schema": 1,
-  "unique_inherited": 135
+  "unique_inherited": 140
 }
