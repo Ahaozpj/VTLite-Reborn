@@ -1,0 +1,22 @@
+{
+  "base_apk_sha256": "2c312fecefce700bae0a956227f79474a6e17da64e93f22f0cb98d4e0436bb30",
+  "release_apk_sha256": "5f6f67d33141e398e97f951f68a83fa35d1c02bedf99a2e31f2bb714b521a3a8",
+  "classes": {
+    "classes4/com/vk/profile/ui/BaseProfileFragment.smali": {
+      "base_sha256": "6449c5e7395c9cd3e58aced4a0bf642cc5439fb538fecda9ef89138cb182b51b",
+      "target_sha256": "f3ba7c613fc854be713d9bd24dfd197e4c9d640383e92cfef9b10114f48b1b34"
+    },
+    "classes2/com/vk/common/links/BrowserUtils$Companion.smali": {
+      "base_sha256": "8a7e0bd55e0fb277613d1fc6892d493c397111268d591228c8f6af673fb0484e",
+      "target_sha256": "974c6ed36bb5b2b3d051b0a6ab5493823ac2efa7b907808e5ef4cf86930b9a49"
+    },
+    "classes4/com/vk/voip/VoipAppBindingFactory$createVoipAppBinding$3.smali": {
+      "base_sha256": "35bba6ede01663da1f34ce6879352120bfd0685e4ee41eebe00451e3f7e551ff",
+      "target_sha256": "c2dea125b294c2b4e2b34216b875865aebe77d09a674ea198cf4b9b15c5914f5"
+    },
+    "classes6/ru/vtosters/lite/ui/fragments/tgstickers/StickersFragment.smali": {
+      "base_sha256": "c351c80d183400fcb65e39cd741330255669c4c10b408d8a63f8ad8bab36452c",
+      "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
+    }
+  }
+}
