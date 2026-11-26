@@ -18,6 +18,12 @@
       ],
       "target_sha256": "008f99b26b5dfe8f0b825c27141090a33873d03503d2c80b04381eba4b6fe9af"
     },
+    "classes2/com/vk/api/sdk/VKApiManager.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "530a2d5c685b5dcbe6c49addd1548f1803c30cc69fad881cfa5894b0f1281389"
+    },
     "classes2/com/vk/api/sdk/auth/VKAccessToken.smali": {
       "patches": [
         "replay_storage_classes"
@@ -29,6 +35,12 @@
         "replay_storage_classes"
       ],
       "target_sha256": "d42965bf61e51ab6c8bf0f9f73ab7bb76798c13c465c56824349891b4313a842"
+    },
+    "classes2/com/vk/api/sdk/chain/InternalErrorRetryChainCall.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "75247ea4f05d59869cf166b508781e7e835b5df388681a52035efe8ccbbde0c0"
     },
     "classes2/com/vk/api/sdk/exceptions/VKApiExecutionException$a.smali": {
       "patches": [
@@ -66,6 +78,12 @@
         "replay_reviewed_classes"
       ],
       "target_sha256": "ab44691f2dec11b58a5e16ee2d792480c784e66740c267f1d57fa1c1cf43aa55"
+    },
+    "classes2/com/vk/api/sdk/okhttp/OkHttpExecutor.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "64b699fe762bff8f7d78e2a5cd3c863acea752b45c63e3f21d7c153f63366517"
     },
     "classes2/com/vk/attachpicker/AttachActivity.smali": {
       "patches": [
@@ -169,6 +187,12 @@
         "patch_package"
       ],
       "target_sha256": "0a3f3d3164b50ba0f78378b40f92f43fc1453b1ad4085cae473756bdcce54191"
+    },
+    "classes2/com/vk/im/engine/ImEnvironmentImpl.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "9bad3521b6a55efd2c73dd384e1bfd1e03e6a0ac8aa25981b5c7f4a467b1f1e3"
     },
     "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetArgs.smali": {
       "patches": [
@@ -568,6 +592,12 @@
       ],
       "target_sha256": "32a4056cf8708adef5914b8b1198b8fd1f32a5415b9a7a61107d78c249a781fc"
     },
+    "classes4/com/vtosters/lite/VKApplication.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "65879bf773328b59543bf5a33d00076f6ca34798fe3df788d6dd42abf2d9d77c"
+    },
     "classes4/com/vtosters/lite/activities/LogoutReceiver.smali": {
       "patches": [
         "patch_package"
@@ -579,6 +609,12 @@
         "replay_privacy_route_classes"
       ],
       "target_sha256": "ad901aaa433c93c228189047a2abb3f04d2fedbeb46496800a197370b871bbc2"
+    },
+    "classes4/com/vtosters/lite/auth/VKAccountManager.smali": {
+      "patches": [
+        "replay_session_classes"
+      ],
+      "target_sha256": "28a06b2f236c4f943202d49e8dbeb3262c361a906f508e60eddf486c56c61e22"
     },
     "classes4/com/vtosters/lite/data/Friends.smali": {
       "patches": [
@@ -924,7 +960,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 158,
+  "patch_entries": 164,
   "schema": 1,
-  "unique_inherited": 153
+  "unique_inherited": 159
 }
