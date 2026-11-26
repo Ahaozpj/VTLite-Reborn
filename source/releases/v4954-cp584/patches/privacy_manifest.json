@@ -1,0 +1,26 @@
+{
+  "base_apk_sha256": "2c312fecefce700bae0a956227f79474a6e17da64e93f22f0cb98d4e0436bb30",
+  "release_apk_sha256": "5f6f67d33141e398e97f951f68a83fa35d1c02bedf99a2e31f2bb714b521a3a8",
+  "classes": {
+    "com/vk/api/sdk/okhttp/LoggingInterceptor$delegate$2$a.smali": {
+      "base_sha256": "d4a9bc872b0ccdefaee664510a541ef75c1a32383750927f85e4bc40fddbe343",
+      "target_sha256": "469f442c88246953ce55b56cb7dc0024dc729256ca4683ab022c7aa02d796aa6"
+    },
+    "com/vk/auth/api/models/AuthCredentials.smali": {
+      "base_sha256": "b4c64ae311371263355e4574f3525142eb5b814e5630cde55c4417fb5aeb97c2",
+      "target_sha256": "a44e59a17e820e0b40d802e4fb5178f4f84915b758f21be67596b99f47b1867c"
+    },
+    "com/vk/auth/api/models/AuthResult.smali": {
+      "base_sha256": "4233df803b25bea63c6b5c8b845f7a03e379ab0c1fb4f49d21c58a87110652db",
+      "target_sha256": "2deb29dc2dfc5eed097b4bf4052690b6b4e3d5f59aaa73108cc5cbf73849dff9"
+    },
+    "com/vk/auth/base/BaseAuthObserver.smali": {
+      "base_sha256": "d16a69c75268d7dfdf1bd2f4d128fa0d74ddd4ee8dd5bf3c8c9acda7a12d5c31",
+      "target_sha256": "5532bebb653303b53078ea6c4d87acb45db0e62cbc5341b5a898c88f68b2bce4"
+    },
+    "com/vk/auth/t/c/SmartLockHelper.smali": {
+      "base_sha256": "9e202fca8eff467dbdd0d6f512ccdcfb8c18c9e12b750008a5c49ba5d6550fe7",
+      "target_sha256": "d01b4e807381b46c6d9b2e31cd00928292c8c55eb30755c9657767a10f79a84c"
+    }
+  }
+}
