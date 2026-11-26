@@ -6,7 +6,7 @@ This checker does not assemble or sign an APK.
 import argparse, hashlib, json, re
 from pathlib import Path
 
-SCRIPTS = ('patch_package','patch_privacy','patch_component_package','replay_reviewed_classes','replay_ui_classes','replay_media_classes','replay_storage_classes','replay_stream_classes')
+SCRIPTS = ('patch_package','patch_privacy','patch_component_package','replay_reviewed_classes','replay_ui_classes','replay_media_classes','replay_storage_classes','replay_stream_classes','replay_privacy_route_classes')
 
 def verify(roots, index):
     expected = index['classes']; actual = {}; count = 0
