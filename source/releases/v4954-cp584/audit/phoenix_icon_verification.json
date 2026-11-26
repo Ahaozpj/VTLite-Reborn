@@ -1,0 +1,51 @@
+[
+  {
+    "path": "res/mipmap-mdpi/vt_launcher.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "c638be822bcc3c58110d1f33c97526d446965ea33fb2b8ad0d34212ec1125781",
+    "release_sha256": "6a5a92b59a63164a1762540cc05c712792cd2bfbcf30755d6e8bd60aaa6ce47f"
+  },
+  {
+    "path": "res/mipmap-hdpi/vt_launcher.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "05dc40120f263f73592302830093c190af8635cbe904dc7a49e82d89e721510d",
+    "release_sha256": "8b41efdd3e4549695531d5538be43cc358797b33ce4f6de49ab0e8e1492c6ecf"
+  },
+  {
+    "path": "res/mipmap-xhdpi/vt_launcher.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "8ba52d3167b5561cb6e01812ca2b57f5eeb435ad54fcd723af5bd9fe984bd308",
+    "release_sha256": "ccc683e24f0c2b887ba169894b506eef638218dac85917a373ebe2f6a211d576"
+  },
+  {
+    "path": "res/mipmap-xxhdpi/vt_launcher.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "f2f0eada8d6e8c66dc1704cea002034508e1e7073e381fbf00ff78ecdfcb2bce",
+    "release_sha256": "201687f946c0ffd9bae345a40f333605f5b259d0a34274b8524a31242c70e57d"
+  },
+  {
+    "path": "res/mipmap-xxxhdpi/vt_launcher.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "7a646f0cec74dea54ee2e02b100e640484c684e68abb796d843f6012ef7017ee",
+    "release_sha256": "f30214b010a1b764a9e5b7cf0e7f7f85715267f53dc07db02ae01130dd33a6e8"
+  },
+  {
+    "path": "res/mipmap-hdpi/vt_launcher_round.png",
+    "rgba_equal": true,
+    "bytes_equal": false,
+    "generated_sha256": "59ef94b2a22e5f86f4e3ee478077b47bea1ea31b21e5c2b02e85b3bad6178e3b",
+    "release_sha256": "e9e48c8a71caf118442c1dd193886e4d50b58dc3eea73b5cd09cd23f9bc1fe03"
+  },
+  {
+    "path": "res/mipmap-hdpi/vt_adaptive_launcher_foreground.png",
+    "rgba_equal": true,
+    "bytes_equal": true,
+    "generated_sha256": "e83a5f30844d55b14b15d5892c1090400cf6573b12706f07a3f3d7d8a8966491",
+    "release_sha256": "e83a5f30844d55b14b15d5892c1090400cf6573b12706f07a3f3d7d8a8966491"
+  }
+]
