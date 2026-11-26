@@ -1,10 +1,10 @@
 {
-  "tag": "v4911-cp309",
-  "release_name": "VTLite Reborn v4911 (CP309) — исправление капчи VK ID",
-  "notes_file": "releases/CP309.md",
-  "apk_name": "VTLite_Reborn_v4911_CP309_Captcha_Fix.apk",
-  "drive_file_id": "1na8M99L4pQkY-WKAk4CICZTdaN4s0HsK",
-  "apk_size_bytes": 80877408,
-  "sha256": "8e069785fbdd253686ccb9f47ec9e16d86e7b38481b3bee1461f2d5519c69e82",
+  "tag": "v4954-cp584",
+  "release_name": "VTLite Reborn v4954 (CP584) — исправление диалогов",
+  "notes_file": "releases/CP584.md",
+  "apk_name": "VTLite_Reborn_v4954_Dialogs_Fix.apk",
+  "drive_file_id": "1aEiD4xwTbzlxkzt-k9_7yNRlUu4nyzXX",
+  "apk_size_bytes": 80969025,
+  "sha256": "5f6f67d33141e398e97f951f68a83fa35d1c02bedf99a2e31f2bb714b521a3a8",
   "prerelease": true
 }
