@@ -140,6 +140,18 @@
       ],
       "target_sha256": "2cdd813d77359789de4893c67f3c1f230c78c4585af873bd7bc3f0a3280b84d1"
     },
+    "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetHistoryApiCmd$a.smali": {
+      "patches": [
+        "replay_preferences_media_classes"
+      ],
+      "target_sha256": "111b8ad7521df659bf4fccd5b28c42736e4faa1031aa05a390f556b47b10429e"
+    },
+    "classes3/com/vk/im/engine/internal/api_parsers/ImageUploadParser.smali": {
+      "patches": [
+        "replay_preferences_media_classes"
+      ],
+      "target_sha256": "590d99ad535dc5c056a51543baba25eb9eb968dfff1e3d5a5f0c409fa0855e40"
+    },
     "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendUncheckedJob.smali": {
       "patches": [
         "replay_reviewed_classes"
@@ -736,6 +748,12 @@
       ],
       "target_sha256": "74f4b67bf364d5870bc2bdca4db7a35c135ce552cef76e0ff4fc96dbd97cb7ff"
     },
+    "classes6/H2.smali": {
+      "patches": [
+        "replay_preferences_media_classes"
+      ],
+      "target_sha256": "b6a41481dbca23f484051d57ff372171aa7efddff30ace0313d5820a90ba770c"
+    },
     "classes6/ru/vtosters/hooks/AboutHook.smali": {
       "patches": [
         "replay_ui_classes"
@@ -747,6 +765,12 @@
         "patch_package"
       ],
       "target_sha256": "30381e7a68a30866eef1424d5d45fbd8a7fed81924259d1533a8aca3f7fb56d4"
+    },
+    "classes6/ru/vtosters/hooks/other/Preferences.smali": {
+      "patches": [
+        "replay_preferences_media_classes"
+      ],
+      "target_sha256": "3d6239d4535a2da0ad6b9d9fce344d006d77e48fa954957bf400cf05bbe000e9"
     },
     "classes6/ru/vtosters/hooks/other/ThemesUtils.smali": {
       "patches": [
@@ -774,7 +798,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 133,
+  "patch_entries": 137,
   "schema": 1,
-  "unique_inherited": 128
+  "unique_inherited": 132
 }
