@@ -54,11 +54,29 @@
       ],
       "target_sha256": "d42965bf61e51ab6c8bf0f9f73ab7bb76798c13c465c56824349891b4313a842"
     },
+    "classes2/com/vk/api/sdk/chain/ChainArgs.smali": {
+      "patches": [
+        "replay_final_inherited_classes"
+      ],
+      "target_sha256": "f4adb660d9ee3f71ba696ed584a0b15fc1030991b5f446bf5602b8097a2176d2"
+    },
     "classes2/com/vk/api/sdk/chain/InternalErrorRetryChainCall.smali": {
       "patches": [
         "replay_session_classes"
       ],
       "target_sha256": "75247ea4f05d59869cf166b508781e7e835b5df388681a52035efe8ccbbde0c0"
+    },
+    "classes2/com/vk/api/sdk/chain/MethodChainCall.smali": {
+      "patches": [
+        "replay_final_inherited_classes"
+      ],
+      "target_sha256": "050ce6daa2c9d81dab3f71e2172af1464537f6151df69ae88d98660d923153de"
+    },
+    "classes2/com/vk/api/sdk/chain/ValidationHandlerChainCall.smali": {
+      "patches": [
+        "replay_final_inherited_classes"
+      ],
+      "target_sha256": "b44056d202d633baa66f0b93f77a51332b4d4db043c1ee0f71d2783cc1a410ae"
     },
     "classes2/com/vk/api/sdk/exceptions/VKApiExecutionException$a.smali": {
       "patches": [
@@ -247,6 +265,12 @@
         "replay_history_diag_classes"
       ],
       "target_sha256": "cb64739604c521877c3836d0396684b0c92a111fa012b532ef33141e7ad277d4"
+    },
+    "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetConversationsApiCmd$a.smali": {
+      "patches": [
+        "replay_final_inherited_classes"
+      ],
+      "target_sha256": "a32d3936ae66d5f6decb53f46b09a6dc7b9e9117e474e7e12f05ea1847cf74a3"
     },
     "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetConversationsApiCmd.smali": {
       "patches": [
@@ -984,7 +1008,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 168,
+  "patch_entries": 172,
   "schema": 1,
-  "unique_inherited": 163
+  "unique_inherited": 167
 }
