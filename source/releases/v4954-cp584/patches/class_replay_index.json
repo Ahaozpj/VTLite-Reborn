@@ -30,6 +30,24 @@
       ],
       "target_sha256": "d42965bf61e51ab6c8bf0f9f73ab7bb76798c13c465c56824349891b4313a842"
     },
+    "classes2/com/vk/api/sdk/exceptions/VKApiExecutionException$a.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "5cb374a1ca0702ce3e2fd8eb38cdd99f2a3bf5e1bb36d6c46c62051495bc94e7"
+    },
+    "classes2/com/vk/api/sdk/exceptions/VKApiExecutionException.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "77c47bccafaefc1dd849e69df030d7906b5486157ebcbb551edffd1ad25cc379"
+    },
+    "classes2/com/vk/api/sdk/internal/VKErrorUtils.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "1bf92436a7b07903b574a9fe069ed475da94608d0a1ac69e8a3b437c2a1c08ff"
+    },
     "classes2/com/vk/api/sdk/okhttp/FileFullRequestBody.smali": {
       "patches": [
         "replay_stream_classes"
@@ -73,6 +91,12 @@
       ],
       "target_sha256": "02260d30716d48313ca150d3abf309996d0ec0e5c1d35342aefd9722621ecc59"
     },
+    "classes2/com/vk/auth/api/VKAuthOkHttpExecutor.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "04ac81ba9af8e4928f2bb550c69d8240d719e2118162d95b941f8430d3dba46b"
+    },
     "classes2/com/vk/auth/api/models/AuthCredentials.smali": {
       "patches": [
         "patch_privacy"
@@ -90,6 +114,18 @@
         "patch_privacy"
       ],
       "target_sha256": "5532bebb653303b53078ea6c4d87acb45db0e62cbc5341b5a898c88f68b2bce4"
+    },
+    "classes2/com/vk/auth/base/BaseAuthPresenter.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "a5ece6839a6ccc71cd4fa16cd8831070cb703ee6a40b309572d125a928c57712"
+    },
+    "classes2/com/vk/auth/init/loginpass/EnterLoginPasswordFragment.smali": {
+      "patches": [
+        "replay_error_auth_classes"
+      ],
+      "target_sha256": "32f5eb9c964b7e1d42035359f07e46ef8ca10925d657470977058929bad24f0f"
     },
     "classes2/com/vk/auth/init/loginpass/EnterLoginPasswordPresenter.smali": {
       "patches": [
@@ -870,7 +906,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 149,
+  "patch_entries": 155,
   "schema": 1,
-  "unique_inherited": 144
+  "unique_inherited": 150
 }
