@@ -200,6 +200,12 @@
       ],
       "target_sha256": "cb64739604c521877c3836d0396684b0c92a111fa012b532ef33141e7ad277d4"
     },
+    "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetConversationsApiCmd.smali": {
+      "patches": [
+        "replay_dialog_ui_classes"
+      ],
+      "target_sha256": "f8be7a3f9de881ce50c5537c0a21c2e7f46b7151dd322a4dccb57f7b80062c10"
+    },
     "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetHistoryApiCmd$a.smali": {
       "patches": [
         "replay_preferences_media_classes"
@@ -272,6 +278,12 @@
       ],
       "target_sha256": "7ae067a8b4cabf04ffd3a05bf704f27d1d24318338567346604860779edb9002"
     },
+    "classes3/com/vk/im/ui/components/dialogs_list/DialogsListPresenter.smali": {
+      "patches": [
+        "replay_dialog_ui_classes"
+      ],
+      "target_sha256": "40216a42c4f42e8b0c4363617629d067b627b0cddf307eba3e0e00d8addc8ffa"
+    },
     "classes3/com/vk/im/ui/components/dialogs_list/LoadInitCmd.smali": {
       "patches": [
         "replay_dialog_route_classes"
@@ -331,6 +343,12 @@
         "replay_ui_classes"
       ],
       "target_sha256": "87cf2b9cdc40f5f62f07de9c1619149224f3da1e9ee34318ba50b213006c8142"
+    },
+    "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc.smali": {
+      "patches": [
+        "replay_dialog_ui_classes"
+      ],
+      "target_sha256": "d81cae3fc743afc15c36fe08dbd374496137c6d7d555b6e59a6131fa45aafa8a"
     },
     "classes3/com/vk/libvideo/live/views/write/WriteView.smali": {
       "patches": [
@@ -906,7 +924,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 155,
+  "patch_entries": 158,
   "schema": 1,
-  "unique_inherited": 150
+  "unique_inherited": 153
 }
