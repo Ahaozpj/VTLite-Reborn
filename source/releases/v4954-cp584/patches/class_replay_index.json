@@ -1,732 +1,750 @@
 {
-  "schema": 1,
-  "unique_inherited": 120,
-  "patch_entries": 125,
   "classes": {
+    "classes2/com/vk/api/internal/q/FilePartRequestBody.smali": {
+      "patches": [
+        "replay_stream_classes"
+      ],
+      "target_sha256": "1f28e45aab21aee42b11a5b0ccbf3b2cb26e747986da64bd4b3bc0bcab856e4f"
+    },
     "classes2/com/vk/api/sdk/VK.smali": {
-      "target_sha256": "008f99b26b5dfe8f0b825c27141090a33873d03503d2c80b04381eba4b6fe9af",
       "patches": [
         "replay_storage_classes"
-      ]
+      ],
+      "target_sha256": "008f99b26b5dfe8f0b825c27141090a33873d03503d2c80b04381eba4b6fe9af"
     },
     "classes2/com/vk/api/sdk/auth/VKAccessToken.smali": {
-      "target_sha256": "cc86c621e44634175d367606f39463845d1efbda659ba4ba47e534f8112fc72f",
       "patches": [
         "replay_storage_classes"
-      ]
+      ],
+      "target_sha256": "cc86c621e44634175d367606f39463845d1efbda659ba4ba47e534f8112fc72f"
     },
     "classes2/com/vk/api/sdk/auth/VKAuthManager.smali": {
-      "target_sha256": "d42965bf61e51ab6c8bf0f9f73ab7bb76798c13c465c56824349891b4313a842",
       "patches": [
         "replay_storage_classes"
-      ]
+      ],
+      "target_sha256": "d42965bf61e51ab6c8bf0f9f73ab7bb76798c13c465c56824349891b4313a842"
+    },
+    "classes2/com/vk/api/sdk/okhttp/FileFullRequestBody.smali": {
+      "patches": [
+        "replay_stream_classes"
+      ],
+      "target_sha256": "12f41a596b6504e5b58135c3a051fd77d6b3dbf46ecb75058ceaee03c14c81eb"
     },
     "classes2/com/vk/api/sdk/okhttp/LoggingInterceptor$delegate$2$a.smali": {
-      "target_sha256": "469f442c88246953ce55b56cb7dc0024dc729256ca4683ab022c7aa02d796aa6",
       "patches": [
         "patch_privacy",
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "469f442c88246953ce55b56cb7dc0024dc729256ca4683ab022c7aa02d796aa6"
     },
     "classes2/com/vk/api/sdk/okhttp/LoggingInterceptor.smali": {
-      "target_sha256": "ab44691f2dec11b58a5e16ee2d792480c784e66740c267f1d57fa1c1cf43aa55",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "ab44691f2dec11b58a5e16ee2d792480c784e66740c267f1d57fa1c1cf43aa55"
     },
     "classes2/com/vk/attachpicker/AttachActivity.smali": {
-      "target_sha256": "032996dd4fb38fa1bb891d83f5d5b9981cd83decee512c2a884058e0e3785859",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "032996dd4fb38fa1bb891d83f5d5b9981cd83decee512c2a884058e0e3785859"
     },
     "classes2/com/vk/attachpicker/fragment/AttachDocumentsFragment.smali": {
-      "target_sha256": "3481d63b1f9cd3594fcfd7bba72cb8f8c9169d1094797c239349ab8368c9ff5f",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "3481d63b1f9cd3594fcfd7bba72cb8f8c9169d1094797c239349ab8368c9ff5f"
     },
     "classes2/com/vk/attachpicker/stickers/selection/SelectionStickerView.smali": {
-      "target_sha256": "efa66a62eb80a17f3f7047f6bd8f4d825e6f5cd6336a819aaf50b852b05609cc",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "efa66a62eb80a17f3f7047f6bd8f4d825e6f5cd6336a819aaf50b852b05609cc"
     },
     "classes2/com/vk/auth/AuthHelper.smali": {
-      "target_sha256": "02260d30716d48313ca150d3abf309996d0ec0e5c1d35342aefd9722621ecc59",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "02260d30716d48313ca150d3abf309996d0ec0e5c1d35342aefd9722621ecc59"
     },
     "classes2/com/vk/auth/api/models/AuthCredentials.smali": {
-      "target_sha256": "a44e59a17e820e0b40d802e4fb5178f4f84915b758f21be67596b99f47b1867c",
       "patches": [
         "patch_privacy"
-      ]
+      ],
+      "target_sha256": "a44e59a17e820e0b40d802e4fb5178f4f84915b758f21be67596b99f47b1867c"
     },
     "classes2/com/vk/auth/api/models/AuthResult.smali": {
-      "target_sha256": "2deb29dc2dfc5eed097b4bf4052690b6b4e3d5f59aaa73108cc5cbf73849dff9",
       "patches": [
         "patch_privacy"
-      ]
+      ],
+      "target_sha256": "2deb29dc2dfc5eed097b4bf4052690b6b4e3d5f59aaa73108cc5cbf73849dff9"
     },
     "classes2/com/vk/auth/base/BaseAuthObserver.smali": {
-      "target_sha256": "5532bebb653303b53078ea6c4d87acb45db0e62cbc5341b5a898c88f68b2bce4",
       "patches": [
         "patch_privacy"
-      ]
+      ],
+      "target_sha256": "5532bebb653303b53078ea6c4d87acb45db0e62cbc5341b5a898c88f68b2bce4"
     },
     "classes2/com/vk/auth/init/loginpass/EnterLoginPasswordPresenter.smali": {
-      "target_sha256": "ef75af56ade5784fff8989dcbed524de9b8ef8da1dc023204c8ca6218e07135b",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "ef75af56ade5784fff8989dcbed524de9b8ef8da1dc023204c8ca6218e07135b"
     },
     "classes2/com/vk/auth/t/c/SmartLockHelper.smali": {
-      "target_sha256": "d01b4e807381b46c6d9b2e31cd00928292c8c55eb30755c9657767a10f79a84c",
       "patches": [
         "patch_privacy"
-      ]
+      ],
+      "target_sha256": "d01b4e807381b46c6d9b2e31cd00928292c8c55eb30755c9657767a10f79a84c"
     },
     "classes2/com/vk/bridges/AuthBridge$a.smali": {
-      "target_sha256": "24988305e46918c3d3aff1341b941bd49e6ecd3907f441d756ce5482f2e0d835",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "24988305e46918c3d3aff1341b941bd49e6ecd3907f441d756ce5482f2e0d835"
     },
     "classes2/com/vk/common/links/BrowserUtils$Companion.smali": {
-      "target_sha256": "974c6ed36bb5b2b3d051b0a6ab5493823ac2efa7b907808e5ef4cf86930b9a49",
       "patches": [
         "patch_component_package",
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "974c6ed36bb5b2b3d051b0a6ab5493823ac2efa7b907808e5ef4cf86930b9a49"
     },
     "classes2/com/vk/core/network/cookies/persistence/SharedPrefsCookiePersistor.smali": {
-      "target_sha256": "038bcf90ffadcee21a94240b4ac62926c6e7a2c228bb634f62caab711b79320c",
       "patches": [
         "replay_storage_classes"
-      ]
+      ],
+      "target_sha256": "038bcf90ffadcee21a94240b4ac62926c6e7a2c228bb634f62caab711b79320c"
     },
     "classes2/com/vk/core/util/TimeUtils.smali": {
-      "target_sha256": "f95492d2101942922c04d766add3dff47dff91ecb986f9813be68814bdc8629a",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "f95492d2101942922c04d766add3dff47dff91ecb986f9813be68814bdc8629a"
     },
     "classes2/com/vk/friends/FriendRequestsFragment.smali": {
-      "target_sha256": "0a3f3d3164b50ba0f78378b40f92f43fc1453b1ad4085cae473756bdcce54191",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "0a3f3d3164b50ba0f78378b40f92f43fc1453b1ad4085cae473756bdcce54191"
     },
     "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendUncheckedJob.smali": {
-      "target_sha256": "8ab334aca1b5a2a882edf1630f4254532df87aa5979144f9d194cbeae8f6a2d6",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "8ab334aca1b5a2a882edf1630f4254532df87aa5979144f9d194cbeae8f6a2d6"
+    },
+    "classes3/com/vk/im/engine/internal/upload/FallbackUploadHelper.smali": {
+      "patches": [
+        "replay_stream_classes"
+      ],
+      "target_sha256": "3ad7d8ab8e310685224b9c2837bc8218aaefaa8f07deb81ab96b6694fb75b2d2"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/DialogsListPresenter$b.smali": {
-      "target_sha256": "b657e962efe2cd7800eab41b8de3a780652893fc3f9ae54b991b020451fd6c0d",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "b657e962efe2cd7800eab41b8de3a780652893fc3f9ae54b991b020451fd6c0d"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/TaskInvalidateHistoryViaCache.smali": {
-      "target_sha256": "3025205125c6cf8f592c395f55c828e2fd1af7243b27425ad2c6c5b2f1a1932e",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "3025205125c6cf8f592c395f55c828e2fd1af7243b27425ad2c6c5b2f1a1932e"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/TaskInvalidateHistoryViaNetwork.smali": {
-      "target_sha256": "19b5b87163280e1e7b134b4bd90fa624e7d63df11fbb635f0a324affd9100e38",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "19b5b87163280e1e7b134b4bd90fa624e7d63df11fbb635f0a324affd9100e38"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/TaskLoadMoreViaCache.smali": {
-      "target_sha256": "7c9d1be533ad935705bd379abc26c8802b5cbd5e3831e1727967a52591b54cc5",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "7c9d1be533ad935705bd379abc26c8802b5cbd5e3831e1727967a52591b54cc5"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/TaskLoadMoreViaNetwork.smali": {
-      "target_sha256": "5447a43b798af6a24fe1af0bf1476c32bc7a7bb0fc1605804cc0b491cd942192",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "5447a43b798af6a24fe1af0bf1476c32bc7a7bb0fc1605804cc0b491cd942192"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc$b.smali": {
-      "target_sha256": "5ac7ab6751c63fe21e9a0338f525418b1174d5825920e81a2b62b05f04a7c802",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "5ac7ab6751c63fe21e9a0338f525418b1174d5825920e81a2b62b05f04a7c802"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc$c.smali": {
-      "target_sha256": "029455c843559bbbb3e0beb7c080ae106d4f8cb68449f6de9858aabae065d778",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "029455c843559bbbb3e0beb7c080ae106d4f8cb68449f6de9858aabae065d778"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc$d.smali": {
-      "target_sha256": "14940dc43acba3fbc6d5aaa09e0fb1d4add39a30af4ab6c64c403bf8cce0114e",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "14940dc43acba3fbc6d5aaa09e0fb1d4add39a30af4ab6c64c403bf8cce0114e"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc$e.smali": {
-      "target_sha256": "44a05180ab3d9f26a7399fcc192b04b770f5414315ae9e7761d448bcaad41b2d",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "44a05180ab3d9f26a7399fcc192b04b770f5414315ae9e7761d448bcaad41b2d"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/vc_impl/DialogsListVc$g.smali": {
-      "target_sha256": "87cf2b9cdc40f5f62f07de9c1619149224f3da1e9ee34318ba50b213006c8142",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "87cf2b9cdc40f5f62f07de9c1619149224f3da1e9ee34318ba50b213006c8142"
     },
     "classes3/com/vk/libvideo/live/views/write/WriteView.smali": {
-      "target_sha256": "6f5e14c809fe9ba2f9e43d9d2471c9525d9a61ad7a50da0883b8549a87bb13cb",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "6f5e14c809fe9ba2f9e43d9d2471c9525d9a61ad7a50da0883b8549a87bb13cb"
     },
     "classes3/com/vk/market/orders/MarketCartFragment.smali": {
-      "target_sha256": "e65e2cbcdfc6cbee63da561b6f4a2a790ef646594e87692486e030b4205f5554",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e65e2cbcdfc6cbee63da561b6f4a2a790ef646594e87692486e030b4205f5554"
     },
     "classes3/com/vk/menu/MenuFragment.smali": {
-      "target_sha256": "36f6560303ec41e652e52e7f3896de7253c198d99f9a1f7749ff2da190e0834c",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "36f6560303ec41e652e52e7f3896de7253c198d99f9a1f7749ff2da190e0834c"
     },
     "classes3/com/vk/menu/SearchMenuPresenter.smali": {
-      "target_sha256": "7c3ccf669e950e9181e28c4934f1a730ea905db573c9371c5477cf90b37deb8a",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "7c3ccf669e950e9181e28c4934f1a730ea905db573c9371c5477cf90b37deb8a"
     },
     "classes3/com/vk/navigation/NavigationDelegateBottom.smali": {
-      "target_sha256": "b37fb2f6a6f174941426d69ea66d7a927abf7b9b0ba9c8a72441844913db5842",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "b37fb2f6a6f174941426d69ea66d7a927abf7b9b0ba9c8a72441844913db5842"
     },
     "classes3/com/vk/navigation/right/RightMenu.smali": {
-      "target_sha256": "1b508015cf4ad137602c61de6394650e89372361c7a1c32303e4829ce4c31535",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "1b508015cf4ad137602c61de6394650e89372361c7a1c32303e4829ce4c31535"
     },
     "classes3/com/vk/newsfeed/HomeFragment.smali": {
-      "target_sha256": "2b817d75ca4c5f4cc7398828f27ada68ad821414d4e766422156b1e00c4e921a",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "2b817d75ca4c5f4cc7398828f27ada68ad821414d4e766422156b1e00c4e921a"
     },
     "classes3/com/vk/newsfeed/holders/TagConfirmationHolder.smali": {
-      "target_sha256": "93e843fc532562642eb58f078944f84f7e68c9b77de0bf3f26bff3a149978ff5",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "93e843fc532562642eb58f078944f84f7e68c9b77de0bf3f26bff3a149978ff5"
     },
     "classes3/com/vk/newsfeed/k0/b/b/PostingItemPresenter.smali": {
-      "target_sha256": "7b3748b29b317007349910cb5bef83fc67c9393e805438b261c26fd8f95030c7",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "7b3748b29b317007349910cb5bef83fc67c9393e805438b261c26fd8f95030c7"
     },
     "classes3/com/vk/newsfeed/presenters/EntriesListPresenter$h.smali": {
-      "target_sha256": "5ed74d3dd8f7887883aa8612c7b6a2b7616e71908d84017fba6195a568427d31",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "5ed74d3dd8f7887883aa8612c7b6a2b7616e71908d84017fba6195a568427d31"
     },
     "classes3/com/vk/newsfeed/presenters/NewsFeedProfilePresenter$a.smali": {
-      "target_sha256": "5f93ab589ba424d7b9f4982ab3f4205a32b8822737a5feed6a903263ebb11bb1",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "5f93ab589ba424d7b9f4982ab3f4205a32b8822737a5feed6a903263ebb11bb1"
     },
     "classes4/com/vk/notifications/NotificationBottomActionsAdapter$a.smali": {
-      "target_sha256": "6602461a72b880e1a94c46f973ec22d4749a6c21e4738645e0753b69ff1219f2",
       "patches": [
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "6602461a72b880e1a94c46f973ec22d4749a6c21e4738645e0753b69ff1219f2"
     },
     "classes4/com/vk/notifications/NotificationsPresenter.smali": {
-      "target_sha256": "52de10f2c1fd1ed9931649bae6b16678844947daa6436cfffeb0a41418a5403e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "52de10f2c1fd1ed9931649bae6b16678844947daa6436cfffeb0a41418a5403e"
     },
     "classes4/com/vk/poll/fragments/PollEditorScreen.smali": {
-      "target_sha256": "2f48ba4a4a4ae8f34a0bf212d26863b681ee8f4e4bc1e151e97f7db9cbb360d9",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "2f48ba4a4a4ae8f34a0bf212d26863b681ee8f4e4bc1e151e97f7db9cbb360d9"
     },
     "classes4/com/vk/profile/ui/BaseProfileFragment.smali": {
-      "target_sha256": "f3ba7c613fc854be713d9bd24dfd197e4c9d640383e92cfef9b10114f48b1b34",
       "patches": [
         "patch_component_package",
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "f3ba7c613fc854be713d9bd24dfd197e4c9d640383e92cfef9b10114f48b1b34"
     },
     "classes4/com/vk/profile/ui/photos/ProfileMainPhotosPresenter.smali": {
-      "target_sha256": "d36d54d074be3a3b7edd056928d6d49274bd5a4632db1e5b5549f4b61bf05c81",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "d36d54d074be3a3b7edd056928d6d49274bd5a4632db1e5b5549f4b61bf05c81"
     },
     "classes4/com/vk/profile/ui/photos/album_list/AlbumsListFragmentPresenter.smali": {
-      "target_sha256": "52baa9ba7154c77fa2c00fac69bb6f054b42dec9be41f961cd8f6ed02c4c837d",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "52baa9ba7154c77fa2c00fac69bb6f054b42dec9be41f961cd8f6ed02c4c837d"
     },
     "classes4/com/vk/profile/ui/photos/photo_list/PhotoListFragmentPresenter$b.smali": {
-      "target_sha256": "deadbeb49bcae5110e992532d2142f1ce51c1e643cb404284f1b71a7df4589db",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "deadbeb49bcae5110e992532d2142f1ce51c1e643cb404284f1b71a7df4589db"
     },
     "classes4/com/vk/profile/ui/photos/photo_list/PhotoListFragmentPresenter.smali": {
-      "target_sha256": "1c2eaf6e29de1ca5aa33dfda6e069988de8781320d2dd84b5579458576b6d0d2",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "1c2eaf6e29de1ca5aa33dfda6e069988de8781320d2dd84b5579458576b6d0d2"
     },
     "classes4/com/vk/search/fragment/BaseSearchFragment.smali": {
-      "target_sha256": "5ff8ae896965de127fc41a802815b2c17bb69029f569be0165adc1851e5a8c74",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "5ff8ae896965de127fc41a802815b2c17bb69029f569be0165adc1851e5a8c74"
     },
     "classes4/com/vk/stickers/Stickers.smali": {
-      "target_sha256": "5d59815e6798f38db82d37b4627b9309dd30fd6d4f7cf6897e9a6d9df5ba538d",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "5d59815e6798f38db82d37b4627b9309dd30fd6d4f7cf6897e9a6d9df5ba538d"
     },
     "classes4/com/vk/stickers/StickersView$a.smali": {
-      "target_sha256": "2bbff26471572c1ba21185fd4672509450fd50582fcf200dc5fbb4d336117205",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "2bbff26471572c1ba21185fd4672509450fd50582fcf200dc5fbb4d336117205"
     },
     "classes4/com/vk/stickers/StickersView.smali": {
-      "target_sha256": "9f96f113bec9324fa23b41f52a28cbbeec07c1d434ceb4fdb15c5afe00275c21",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "9f96f113bec9324fa23b41f52a28cbbeec07c1d434ceb4fdb15c5afe00275c21"
     },
     "classes4/com/vk/stories/view/StoryViewContainer.smali": {
-      "target_sha256": "18c60a04ceb675bec781519bb3bb7262fdb51f2028e564c97e17e6553ed1957f",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "18c60a04ceb675bec781519bb3bb7262fdb51f2028e564c97e17e6553ed1957f"
     },
     "classes4/com/vk/ui/photoviewer/MenuController$b.smali": {
-      "target_sha256": "7d13dceef02efd2ba7dc4299c857f15d73f41909f724c05e3cb0ede8a14a9105",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "7d13dceef02efd2ba7dc4299c857f15d73f41909f724c05e3cb0ede8a14a9105"
     },
     "classes4/com/vk/ui/photoviewer/MenuController$g.smali": {
-      "target_sha256": "8ad939d1cf6221543d4c5423c8dbe46e0e58c9b40a42bb54ae295dd017a8325e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "8ad939d1cf6221543d4c5423c8dbe46e0e58c9b40a42bb54ae295dd017a8325e"
     },
     "classes4/com/vk/ui/photoviewer/MenuController$h.smali": {
-      "target_sha256": "813ac87fe1a7fbdb825ec80e0e2c55fcf6800a54baefa03390aa9687ba7a0b63",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "813ac87fe1a7fbdb825ec80e0e2c55fcf6800a54baefa03390aa9687ba7a0b63"
     },
     "classes4/com/vk/video/VideoAlbumsController$e.smali": {
-      "target_sha256": "1e093192b83f58d54fa1a4fb5f262ba11cd54039abe936d62626c623935a5fe4",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "1e093192b83f58d54fa1a4fb5f262ba11cd54039abe936d62626c623935a5fe4"
     },
     "classes4/com/vk/voip/VoipAppBindingFactory$createVoipAppBinding$3.smali": {
-      "target_sha256": "c2dea125b294c2b4e2b34216b875865aebe77d09a674ea198cf4b9b15c5914f5",
       "patches": [
         "patch_component_package",
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "c2dea125b294c2b4e2b34216b875865aebe77d09a674ea198cf4b9b15c5914f5"
     },
     "classes4/com/vk/wall/post/PostViewFragment.smali": {
-      "target_sha256": "43631b447d915c09556ed42799068ce983dbbb55baa0931d62381d2fd0c6361c",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "43631b447d915c09556ed42799068ce983dbbb55baa0931d62381d2fd0c6361c"
     },
     "classes4/com/vk/wall/post/PostViewPresenter$i.smali": {
-      "target_sha256": "04bedeeaa556efde20690982f0132116b45d7a44e7ba07ff87aa52687c16e34e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "04bedeeaa556efde20690982f0132116b45d7a44e7ba07ff87aa52687c16e34e"
     },
     "classes4/com/vtosters/lite/BroadcastEvents.smali": {
-      "target_sha256": "79e02ee0613752698819651252de0371ad246acb4d82599f21d951e3df1f79cd",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "79e02ee0613752698819651252de0371ad246acb4d82599f21d951e3df1f79cd"
     },
     "classes4/com/vtosters/lite/MenuCounterUpdater$b.smali": {
-      "target_sha256": "e4719d396d91004a60cca87e65291c7a2ee77bc325cd0d777db4d02352ede804",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e4719d396d91004a60cca87e65291c7a2ee77bc325cd0d777db4d02352ede804"
     },
     "classes4/com/vtosters/lite/MenuCounterUpdater.smali": {
-      "target_sha256": "32a4056cf8708adef5914b8b1198b8fd1f32a5415b9a7a61107d78c249a781fc",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "32a4056cf8708adef5914b8b1198b8fd1f32a5415b9a7a61107d78c249a781fc"
     },
     "classes4/com/vtosters/lite/activities/LogoutReceiver.smali": {
-      "target_sha256": "93e9a17e0ab0e97e4f2e1c7839bc3fdbb81f541cbd96fe09db54b40607e7cb10",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "93e9a17e0ab0e97e4f2e1c7839bc3fdbb81f541cbd96fe09db54b40607e7cb10"
     },
     "classes4/com/vtosters/lite/data/Friends.smali": {
-      "target_sha256": "e5f168ee8e2a65f00db7038c75f25a926724e2e9ceda7138f6edcf5e96486224",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e5f168ee8e2a65f00db7038c75f25a926724e2e9ceda7138f6edcf5e96486224"
     },
     "classes4/com/vtosters/lite/data/Games.smali": {
-      "target_sha256": "57e9864a2aaf35a7f70f53a3b2e3050843f98e5d5f8034eb14e1d8d5553b0189",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "57e9864a2aaf35a7f70f53a3b2e3050843f98e5d5f8034eb14e1d8d5553b0189"
     },
     "classes4/com/vtosters/lite/data/Groups.smali": {
-      "target_sha256": "afc3a389895980ba442ef5340e2d41f1a2a2cc39fc052145535aebab6d533673",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "afc3a389895980ba442ef5340e2d41f1a2a2cc39fc052145535aebab6d533673"
     },
     "classes4/com/vtosters/lite/fragments/MyGamesListFragment.smali": {
-      "target_sha256": "69d49f7209129d52221f587ae63f48acb557aba7960915bb39270eb7a7cc40d0",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "69d49f7209129d52221f587ae63f48acb557aba7960915bb39270eb7a7cc40d0"
     },
     "classes4/com/vtosters/lite/fragments/ProfileFragment.smali": {
-      "target_sha256": "e4e41fbb11b9ab627d6499040d1ba8fa4e6764358da56de9122c03bb525a098b",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e4e41fbb11b9ab627d6499040d1ba8fa4e6764358da56de9122c03bb525a098b"
     },
     "classes4/com/vtosters/lite/fragments/friends/FriendRequestsTabFragment.smali": {
-      "target_sha256": "4b51bac5dfdda1d8dc12b66d8c36da3e76c901e82af9cd39081f4bdd04f4b4a0",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "4b51bac5dfdda1d8dc12b66d8c36da3e76c901e82af9cd39081f4bdd04f4b4a0"
     },
     "classes4/com/vtosters/lite/fragments/friends/FriendsListFragment.smali": {
-      "target_sha256": "fa46f4fcb539aaa715d6964394d89c43e21d080063d21b9d8a345db7b286cfd7",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "fa46f4fcb539aaa715d6964394d89c43e21d080063d21b9d8a345db7b286cfd7"
     },
     "classes4/com/vtosters/lite/fragments/friends/presenter/CurrentUserFriendsPresenter.smali": {
-      "target_sha256": "bdbe8d765d2f4661a305f74a2c933901950906ac306567acac675af5e263f68e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "bdbe8d765d2f4661a305f74a2c933901950906ac306567acac675af5e263f68e"
     },
     "classes4/com/vtosters/lite/fragments/gifts/GiftCategoryFragment.smali": {
-      "target_sha256": "2ca4d17469435aaf126001fb5fe39cef630a893370bb0dba38ffae3515c8eb3c",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "2ca4d17469435aaf126001fb5fe39cef630a893370bb0dba38ffae3515c8eb3c"
     },
     "classes4/com/vtosters/lite/fragments/gifts/GiftSendFragment.smali": {
-      "target_sha256": "56784c68ec6b409289e919276e6eb86835abe129f470701fd8a6d6f378ac5f6d",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "56784c68ec6b409289e919276e6eb86835abe129f470701fd8a6d6f378ac5f6d"
     },
     "classes4/com/vtosters/lite/fragments/gifts/GiftsCatalogFragment.smali": {
-      "target_sha256": "84fa9030fcb763954cd3cec6cb9f3f12cb5a283794017efd9d16c18cc87277f6",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "84fa9030fcb763954cd3cec6cb9f3f12cb5a283794017efd9d16c18cc87277f6"
     },
     "classes4/com/vtosters/lite/fragments/market/GoodFragment.smali": {
-      "target_sha256": "3bff83752e2ef48f47f7ef37df1b427389fb484c363113433a23068c23503e70",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "3bff83752e2ef48f47f7ef37df1b427389fb484c363113433a23068c23503e70"
     },
     "classes4/com/vtosters/lite/fragments/money/MoneyTransferDetailsActions$b.smali": {
-      "target_sha256": "9567cfe83e51091e31af4f1da88f2ae9bc2fcbc6a36e7d547ca586d371a9780e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "9567cfe83e51091e31af4f1da88f2ae9bc2fcbc6a36e7d547ca586d371a9780e"
     },
     "classes4/com/vtosters/lite/fragments/money/MoneyTransfersFragment.smali": {
-      "target_sha256": "7a993d722ec326be40ab665adabff280366e43806e3ac22ec3583c99996d3be2",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "7a993d722ec326be40ab665adabff280366e43806e3ac22ec3583c99996d3be2"
     },
     "classes4/com/vtosters/lite/fragments/money/MoneyWebViewFragment.smali": {
-      "target_sha256": "95aaa1cf91630654c6bd2d5db2165f7629548e07cee452e0d85539b4e94e2236",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "95aaa1cf91630654c6bd2d5db2165f7629548e07cee452e0d85539b4e94e2236"
     },
     "classes4/com/vtosters/lite/fragments/o2/BoardTopicViewFragment.smali": {
-      "target_sha256": "f6c33311ce63bf9854fd690bee711227a20155302fb353383ad3f2c41a9cb62e",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "f6c33311ce63bf9854fd690bee711227a20155302fb353383ad3f2c41a9cb62e"
     },
     "classes4/com/vtosters/lite/fragments/p2/DocumentsViewFragment.smali": {
-      "target_sha256": "84360c9c12c48dfd3a1b7270955fefc352c49ef8ccd2cb0c0635360de2685139",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "84360c9c12c48dfd3a1b7270955fefc352c49ef8ccd2cb0c0635360de2685139"
     },
     "classes4/com/vtosters/lite/fragments/s2/GroupInvitesFragment$d.smali": {
-      "target_sha256": "7c5652065ef8822d0bc223618e66efc89de8a2c9cd5952fb51f5c67cf3885bde",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "7c5652065ef8822d0bc223618e66efc89de8a2c9cd5952fb51f5c67cf3885bde"
     },
     "classes4/com/vtosters/lite/fragments/s2/GroupInvitesFragment.smali": {
-      "target_sha256": "9d69b5ffa1deefe5be367f7b7e9612274588861049e1b90979219faa53711428",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "9d69b5ffa1deefe5be367f7b7e9612274588861049e1b90979219faa53711428"
     },
     "classes4/com/vtosters/lite/fragments/s2/GroupsFragment1.smali": {
-      "target_sha256": "6614631681b38365137b823393941e1d8a7b1550aff2d63db0367e352069b216",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "6614631681b38365137b823393941e1d8a7b1550aff2d63db0367e352069b216"
     },
     "classes4/com/vtosters/lite/general/fragments/GameCardFragment.smali": {
-      "target_sha256": "6500e8c0f0c435f0ab211fd0490521b94c1d0638a9393c2810f5a92af85b08c3",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "6500e8c0f0c435f0ab211fd0490521b94c1d0638a9393c2810f5a92af85b08c3"
     },
     "classes4/com/vtosters/lite/general/fragments/GamesFragment.smali": {
-      "target_sha256": "58de91ed53305c99630a7f0791bb6e45196dc364a9db99145e9c78050d3f5413",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "58de91ed53305c99630a7f0791bb6e45196dc364a9db99145e9c78050d3f5413"
     },
     "classes4/com/vtosters/lite/general/fragments/GamesListFragment.smali": {
-      "target_sha256": "07f9de623fd0204a9a2cccba24145dfa791a88191e9cb6d091a77b30e9cc6a1b",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "07f9de623fd0204a9a2cccba24145dfa791a88191e9cb6d091a77b30e9cc6a1b"
     },
     "classes4/com/vtosters/lite/general/fragments/GamesRequestFragment.smali": {
-      "target_sha256": "3aebdfdaa748696b40a27a055a15a2e8f6f51a71ab7ebf677631431639bb9e53",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "3aebdfdaa748696b40a27a055a15a2e8f6f51a71ab7ebf677631431639bb9e53"
     },
     "classes4/com/vtosters/lite/general/fragments/WebViewFragment.smali": {
-      "target_sha256": "941c2940c67be6656ee49c94d7570be49c96c282cfd979808afeeb8ef1cdef6d",
       "patches": [
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "941c2940c67be6656ee49c94d7570be49c96c282cfd979808afeeb8ef1cdef6d"
     },
     "classes5/com/vtosters/lite/fragments/photos/EditAlbumFragment$d.smali": {
-      "target_sha256": "e6016da00764bc67fb0235e302bacb50940b1d9ba271841de8fdb04a5a89fd91",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e6016da00764bc67fb0235e302bacb50940b1d9ba271841de8fdb04a5a89fd91"
     },
     "classes5/com/vtosters/lite/fragments/photos/EditAlbumFragment$e.smali": {
-      "target_sha256": "c6ea88e29c14aa0b755280f8a75c5df08981f6b692524b218428250b97b9f136",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "c6ea88e29c14aa0b755280f8a75c5df08981f6b692524b218428250b97b9f136"
     },
     "classes5/com/vtosters/lite/fragments/photos/PhotoAlbumListFragment$h.smali": {
-      "target_sha256": "4d06bb6b466bd3165ebb0be647685778b8bbf2aa04a871f0b88010a82e7db263",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "4d06bb6b466bd3165ebb0be647685778b8bbf2aa04a871f0b88010a82e7db263"
     },
     "classes5/com/vtosters/lite/fragments/photos/PhotoAlbumListFragment.smali": {
-      "target_sha256": "6cb27e0f9d74c6fcc1aa4b5f920490503d2218fda684c5027e1d72e61fbc6dbf",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "6cb27e0f9d74c6fcc1aa4b5f920490503d2218fda684c5027e1d72e61fbc6dbf"
     },
     "classes5/com/vtosters/lite/fragments/photos/PhotoListFragment.smali": {
-      "target_sha256": "39431a1c74f46fc6f0b8dd20700a984519dcea2ae12a9a1a67f883eb1132e015",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "39431a1c74f46fc6f0b8dd20700a984519dcea2ae12a9a1a67f883eb1132e015"
     },
     "classes5/com/vtosters/lite/fragments/stickers/StickersCatalogFragment.smali": {
-      "target_sha256": "fd06eefe69bf4e1897a2683da43e8c8e6bec72db8f03d626c78d4643884f098d",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "fd06eefe69bf4e1897a2683da43e8c8e6bec72db8f03d626c78d4643884f098d"
     },
     "classes5/com/vtosters/lite/fragments/stickers/StickersDetailsFragment.smali": {
-      "target_sha256": "217ff4947660e93e9d8ffb45ff981f852e9439835767dbbdc859fd6f3e9dd99c",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "217ff4947660e93e9d8ffb45ff981f852e9439835767dbbdc859fd6f3e9dd99c"
     },
     "classes5/com/vtosters/lite/fragments/stickers/StoreTabFragment.smali": {
-      "target_sha256": "8a3b01f5ce994f4dd7eca975b77c7882880785a32f45f16ec445e52bcb6ee246",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "8a3b01f5ce994f4dd7eca975b77c7882880785a32f45f16ec445e52bcb6ee246"
     },
     "classes5/com/vtosters/lite/fragments/y2/AddedVideosFragment.smali": {
-      "target_sha256": "045ffc5edd8b335721e172023584a796fe8f45ae11222c18a56f3853c1efad14",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "045ffc5edd8b335721e172023584a796fe8f45ae11222c18a56f3853c1efad14"
     },
     "classes5/com/vtosters/lite/fragments/y2/UploadedVideosFragment.smali": {
-      "target_sha256": "dc322079d554a7ac52ea8037452e493c0c55846f44ff9d84cf68f46ae187374a",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "dc322079d554a7ac52ea8037452e493c0c55846f44ff9d84cf68f46ae187374a"
     },
     "classes5/com/vtosters/lite/fragments/y2/VideoAlbumsFragment.smali": {
-      "target_sha256": "08b9f190ce733656e43aa6259ec26299f2ae45c4aeb39658381c2c74faa65971",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "08b9f190ce733656e43aa6259ec26299f2ae45c4aeb39658381c2c74faa65971"
     },
     "classes5/com/vtosters/lite/im/bridge/ImBridgesInstance.smali": {
-      "target_sha256": "bff071e47a372b4efeec0cf0cf11baa2ef93fa7e1c0afa73dae8a683d3d8d20d",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "bff071e47a372b4efeec0cf0cf11baa2ef93fa7e1c0afa73dae8a683d3d8d20d"
     },
     "classes5/com/vtosters/lite/im/bridge/contentprovider/ImCompanionHelper.smali": {
-      "target_sha256": "e6d7d5822c0219963ac74159897c6f895a35daab9c62b1fb5b0f91abbe414dd1",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "e6d7d5822c0219963ac74159897c6f895a35daab9c62b1fb5b0f91abbe414dd1"
     },
     "classes5/com/vtosters/lite/im/bridge/contentprovider/ImPublisher.smali": {
-      "target_sha256": "4b71ed6edc76abee37b0974264ac270e04bd54102d27a5c8213e0ab5ba404951",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "4b71ed6edc76abee37b0974264ac270e04bd54102d27a5c8213e0ab5ba404951"
     },
     "classes5/com/vtosters/lite/im/converters/ImPhotoConverter.smali": {
-      "target_sha256": "b083014b9042063ed4073fb7c21b92059edf908a597612c2eb02c7903041a3d4",
       "patches": [
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "b083014b9042063ed4073fb7c21b92059edf908a597612c2eb02c7903041a3d4"
     },
     "classes5/com/vtosters/lite/ui/AttachmentsEditorView.smali": {
-      "target_sha256": "67ce6ed25c01079ba532b99c7d859bc3f4bef1de7b065d4dcc0ceed213d22871",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "67ce6ed25c01079ba532b99c7d859bc3f4bef1de7b065d4dcc0ceed213d22871"
     },
     "classes5/com/vtosters/lite/ui/WriteBar.smali": {
-      "target_sha256": "cfd35b1e0935c76998094d246e83c777e6cb7ddea7bc47d1feee01f5175ac4e7",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "cfd35b1e0935c76998094d246e83c777e6cb7ddea7bc47d1feee01f5175ac4e7"
     },
     "classes5/com/vtosters/lite/ui/b0/q/MoneyTransferHolder$b.smali": {
-      "target_sha256": "b94d8d25854571c6eea0ad8b1146540f0c9bd6008381e6331a3ee37fb8dae8bb",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "b94d8d25854571c6eea0ad8b1146540f0c9bd6008381e6331a3ee37fb8dae8bb"
     },
     "classes5/com/vtosters/lite/ui/widget/MenuListView.smali": {
-      "target_sha256": "ac5f3ae521d2587b61e1cb6986a41b35b0689097f49fb1f9ffca4f076ecc59ec",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "ac5f3ae521d2587b61e1cb6986a41b35b0689097f49fb1f9ffca4f076ecc59ec"
     },
     "classes5/com/vtosters/lite/upload/UploadListener.smali": {
-      "target_sha256": "3ce3571110b4485ebb5b43d068c168f9af4b7bcce582da4ff73159c9d9ff6575",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "3ce3571110b4485ebb5b43d068c168f9af4b7bcce582da4ff73159c9d9ff6575"
     },
     "classes5/com/vtosters/lite/upload/UploadUtils$g.smali": {
-      "target_sha256": "119b137d1f7f55004d48861bedeb088c3eabd0ca57e7b321c0b9f9c2b3e82c7f",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "119b137d1f7f55004d48861bedeb088c3eabd0ca57e7b321c0b9f9c2b3e82c7f"
     },
     "classes5/com/vtosters/lite/upload/l/ProfilePhotoUploadTask.smali": {
-      "target_sha256": "4ad61e1231ccae538b391c853089b2fe71f25a402a1c98b79a2597e6980f7995",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "4ad61e1231ccae538b391c853089b2fe71f25a402a1c98b79a2597e6980f7995"
     },
     "classes5/com/vtosters/lite/utils/CookieHelper.smali": {
-      "target_sha256": "a05dfb408e28ac52c6b7d48bd11cc033b90d4c02a579a05a3ad48f26f376f22a",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "a05dfb408e28ac52c6b7d48bd11cc033b90d4c02a579a05a3ad48f26f376f22a"
     },
     "classes6/E5.smali": {
-      "target_sha256": "74f4b67bf364d5870bc2bdca4db7a35c135ce552cef76e0ff4fc96dbd97cb7ff",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "74f4b67bf364d5870bc2bdca4db7a35c135ce552cef76e0ff4fc96dbd97cb7ff"
     },
     "classes6/ru/vtosters/hooks/AboutHook.smali": {
-      "target_sha256": "37ff8f586d626e9664bc7143898a70850018a6485f51016f8161a1e7a0578ea6",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "37ff8f586d626e9664bc7143898a70850018a6485f51016f8161a1e7a0578ea6"
     },
     "classes6/ru/vtosters/hooks/PhotoViewer$1.smali": {
-      "target_sha256": "30381e7a68a30866eef1424d5d45fbd8a7fed81924259d1533a8aca3f7fb56d4",
       "patches": [
         "patch_package"
-      ]
+      ],
+      "target_sha256": "30381e7a68a30866eef1424d5d45fbd8a7fed81924259d1533a8aca3f7fb56d4"
     },
     "classes6/ru/vtosters/hooks/other/ThemesUtils.smali": {
-      "target_sha256": "39a21d8933ddc54af71ad808ab46874bcec012e7d4d8a48c0cbf57a646dcd93c",
       "patches": [
         "replay_reviewed_classes"
-      ]
+      ],
+      "target_sha256": "39a21d8933ddc54af71ad808ab46874bcec012e7d4d8a48c0cbf57a646dcd93c"
     },
     "classes6/ru/vtosters/lite/ui/fragments/ThemesFragment.smali": {
-      "target_sha256": "b2dccd60ccedd78ed870750f71dd3b399af6658e204997b70f86f6c6285f5a86",
       "patches": [
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "b2dccd60ccedd78ed870750f71dd3b399af6658e204997b70f86f6c6285f5a86"
     },
     "classes6/ru/vtosters/lite/ui/fragments/VTSettings.smali": {
-      "target_sha256": "7e01cfa30c9ada513fd8b725a29ac482ede269ec3d732991914a8faf2fded181",
       "patches": [
         "replay_ui_classes"
-      ]
+      ],
+      "target_sha256": "7e01cfa30c9ada513fd8b725a29ac482ede269ec3d732991914a8faf2fded181"
     },
     "classes6/ru/vtosters/lite/ui/fragments/tgstickers/StickersFragment.smali": {
-      "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca",
       "patches": [
         "patch_component_package",
         "replay_media_classes"
-      ]
+      ],
+      "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
-  }
+  },
+  "patch_entries": 128,
+  "schema": 1,
+  "unique_inherited": 123
 }
