@@ -1,0 +1,12 @@
+# CP584 v4954 — added resource dependency provenance
+
+Re-read both SHA-pinned APK resource tables and freshly disassembled seven selected R$ classes from release classes9.dex with baksmali 3.0.10. The 56 new named resources match the historical CP258/259 and CP266 symbol sets exactly, including the CP259 correction of seven dotted style aliases (not new IDs). AndroidX Core 1.13.1: 32 IDs, 663 configurations, 45 new compiled resource files. VKCaptcha 0.0.16: 24 IDs, 24 configurations, 10 files. All 55 added res/ paths belong to exactly one of those two sets by table string references. The additional assets/index.html has 45 bytes, and its origin is attributed to the SDK by the historical CP266 report; byte identity with upstream AAR has not been tested. All 20,831 original ID/name mappings preserved. All 27 historical SDK R mappings match the release table and freshly decoded R$ assignments, including 3 reused original symbols. No resource payload or third-party code exported.
+
+Run from audit/: `python audit_added_resources.py ORIGINAL.apk RELEASE.apk resource_dependencies.json BAKSMALI.jar result.json`. It imports the already published audit_resource_table.py and audit_resources.py. For regression tests set CP584_BASE_APK and CP584_RELEASE_APK to local verified inputs and run `python -m unittest -v test_audit_added_resources`. 7/7 passed: one positive and six negative mutations (missing resource, wrong owner, wrong R value, renamed original, added unexpected file, removed file). These are real input table mutation tests, not Android runtime tests.
+
+The dependency coordinates and SHA256 pins come from historical reports. No AAR file currently available in the workspace; exact source overlay reproduction, dependency DEX provenance, byte comparison with AAR files, integrated build and Android runtime remain open. 280/280 prior inventoried changed/new class candidates unchanged; no additional class coverage claimed. No APK or tag changed. Historical reports used (SHA256):
+- `CP258_ANDROIDX_RESOURCE_CONFLICTS_READ_ONLY.json`: `dce8fd9cb47407c6edc1f729ad8499dd2e6b95e3060cf2158333fe85a4df11bb`
+- `CP259_ANDROIDX_RESOURCE_ONLY_QA_REPORT.md`: `8f166544a1558d9e9fc7d9ffe3c54e15148cc4ed0351903d5d6f90409c482a19`
+- `CP266_MERGED_RESOURCE_AND_R_GATE.md`: `f48f41128126e880df8238b52642c3c9106bb1573c1151608ec553cff409ca48`
+- `CP266_VKCAPTCHA_RESOURCES_VS_CP247_READONLY.json`: `0f0695b9cdc2650fe2436f22acb33385564f80698a58f44d458b7c66a9bc5a52`
+- `CP266_R_FIELD_MAP.json`: `d2d1af4956ffc8487d044e6fb34c4068d0d3f81fc7b9118a9a9f14751f655032`
