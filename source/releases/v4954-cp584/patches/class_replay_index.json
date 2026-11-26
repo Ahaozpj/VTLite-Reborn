@@ -158,17 +158,35 @@
       ],
       "target_sha256": "69795aac61f0e7fdf2395b4ec1de6ebf9e8149ecbd436a08159af0f18df09c3b"
     },
+    "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetCmd.smali": {
+      "patches": [
+        "replay_history_diag_classes"
+      ],
+      "target_sha256": "cb64739604c521877c3836d0396684b0c92a111fa012b532ef33141e7ad277d4"
+    },
     "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetHistoryApiCmd$a.smali": {
       "patches": [
         "replay_preferences_media_classes"
       ],
       "target_sha256": "111b8ad7521df659bf4fccd5b28c42736e4faa1031aa05a390f556b47b10429e"
     },
+    "classes3/com/vk/im/engine/internal/api_commands/messages/MessagesGetHistoryApiCmd.smali": {
+      "patches": [
+        "replay_history_diag_classes"
+      ],
+      "target_sha256": "4e55756360ed4a383c62aa51e36f74d2e9b4bfd465d9b572a58209079c9de157"
+    },
     "classes3/com/vk/im/engine/internal/api_parsers/ImageUploadParser.smali": {
       "patches": [
         "replay_preferences_media_classes"
       ],
       "target_sha256": "590d99ad535dc5c056a51543baba25eb9eb968dfff1e3d5a5f0c409fa0855e40"
+    },
+    "classes3/com/vk/im/engine/internal/api_parsers/UserApiParser.smali": {
+      "patches": [
+        "replay_history_diag_classes"
+      ],
+      "target_sha256": "c6c6b3ca555b79a0971ddbe911c5f63da025aa947aa97c92e6e67b15c99fcf35"
     },
     "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendJob.smali": {
       "patches": [
@@ -199,6 +217,12 @@
         "replay_message_media_classes"
       ],
       "target_sha256": "e7f9a990f030a8b314beb8d77d59af8c51dad57bee8d99e794abdf4fc4ad5663"
+    },
+    "classes3/com/vk/im/engine/reporters/DialogsRefreshReporter.smali": {
+      "patches": [
+        "replay_history_diag_classes"
+      ],
+      "target_sha256": "38054a61a7a3d2f1601fe00c2006815c576b10b667465313e5fbd39ad87295b7"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/DialogsListPresenter$b.smali": {
       "patches": [
@@ -846,7 +870,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 145,
+  "patch_entries": 149,
   "schema": 1,
-  "unique_inherited": 140
+  "unique_inherited": 144
 }
