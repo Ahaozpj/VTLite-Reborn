@@ -1,0 +1,601 @@
+{
+  "base_apk_sha256": "2c312fecefce700bae0a956227f79474a6e17da64e93f22f0cb98d4e0436bb30",
+  "release_apk_sha256": "5f6f67d33141e398e97f951f68a83fa35d1c02bedf99a2e31f2bb714b521a3a8",
+  "classes": [
+    {
+      "key": "classes2|Lcom/vk/attachpicker/AttachActivity;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "59f3f6d43278e34b4c6c3028fffa5e8ab52edfceec8ab88e7c5af06b46ff0946",
+      "target_sha256": "032996dd4fb38fa1bb891d83f5d5b9981cd83decee512c2a884058e0e3785859"
+    },
+    {
+      "key": "classes2|Lcom/vk/attachpicker/fragment/AttachDocumentsFragment;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "ea5fa95f8a82a5ac6f2e64e38c0b490d71988061e0574d80243562ac6541689d",
+      "target_sha256": "3481d63b1f9cd3594fcfd7bba72cb8f8c9169d1094797c239349ab8368c9ff5f"
+    },
+    {
+      "key": "classes2|Lcom/vk/attachpicker/stickers/selection/SelectionStickerView;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "a175ded6f698023908537d4d9f1fb41803b0939ab779c3a8f6d684ade3dd9903",
+      "target_sha256": "efa66a62eb80a17f3f7047f6bd8f4d825e6f5cd6336a819aaf50b852b05609cc"
+    },
+    {
+      "key": "classes2|Lcom/vk/auth/AuthHelper;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "eb81ac28db64341f5c63ad202727d08c8d55ef94d50e29b03c8a0137724b40cd",
+      "target_sha256": "02260d30716d48313ca150d3abf309996d0ec0e5c1d35342aefd9722621ecc59"
+    },
+    {
+      "key": "classes2|Lcom/vk/bridges/AuthBridge$a;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "6260cfa4b8b1f49d473e1cfc2049fd38a6214b6ce49d00143b3cf6c97f28b882",
+      "target_sha256": "24988305e46918c3d3aff1341b941bd49e6ecd3907f441d756ce5482f2e0d835"
+    },
+    {
+      "key": "classes2|Lcom/vk/friends/FriendRequestsFragment;",
+      "mode": "strip_line",
+      "replacements": 1,
+      "base_sha256": "c6ae91b8bce7ee7cedfe1aa51c99747e029cf99a1e5eaa9988872bc9a7a9e91e",
+      "target_sha256": "0a3f3d3164b50ba0f78378b40f92f43fc1453b1ad4085cae473756bdcce54191"
+    },
+    {
+      "key": "classes3|Lcom/vk/libvideo/live/views/write/WriteView;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "2e98ac57bc157ace06342df78d4c2ecf7e651c6b94daddd31441ec26560d354d",
+      "target_sha256": "6f5e14c809fe9ba2f9e43d9d2471c9525d9a61ad7a50da0883b8549a87bb13cb"
+    },
+    {
+      "key": "classes3|Lcom/vk/market/orders/MarketCartFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "a91dc60706efc413a40f15a048b47f451bf21f71bc8325a937b0d118513508d1",
+      "target_sha256": "e65e2cbcdfc6cbee63da561b6f4a2a790ef646594e87692486e030b4205f5554"
+    },
+    {
+      "key": "classes3|Lcom/vk/menu/MenuFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "387cbc5bfe14a1398083ee89022bc4f2f9f43f02357daee4b58f9f453f8227bf",
+      "target_sha256": "36f6560303ec41e652e52e7f3896de7253c198d99f9a1f7749ff2da190e0834c"
+    },
+    {
+      "key": "classes3|Lcom/vk/menu/SearchMenuPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "0c902dcc174444349875414ff002cb865e70d40e5d07072619f093af262d1d21",
+      "target_sha256": "7c3ccf669e950e9181e28c4934f1a730ea905db573c9371c5477cf90b37deb8a"
+    },
+    {
+      "key": "classes3|Lcom/vk/navigation/NavigationDelegateBottom;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "e533be2c37071e0f06a8628ce663feffb8dbf7401247bf92ffcc066c8530eaa4",
+      "target_sha256": "b37fb2f6a6f174941426d69ea66d7a927abf7b9b0ba9c8a72441844913db5842"
+    },
+    {
+      "key": "classes3|Lcom/vk/navigation/right/RightMenu;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "ca00b3f798ea5f7aef69866f93464847d2acdb372860289c21736ca4a958881e",
+      "target_sha256": "1b508015cf4ad137602c61de6394650e89372361c7a1c32303e4829ce4c31535"
+    },
+    {
+      "key": "classes3|Lcom/vk/newsfeed/HomeFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "55bcef3bc06fc062befaa10709378fcca8a7269e7bc757c50efca8660ed7df72",
+      "target_sha256": "2b817d75ca4c5f4cc7398828f27ada68ad821414d4e766422156b1e00c4e921a"
+    },
+    {
+      "key": "classes3|Lcom/vk/newsfeed/holders/TagConfirmationHolder;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "22bd2dc2eb17620be096bbde5b6766f7b93b0a34b5f0f441b474dd5182ae6480",
+      "target_sha256": "93e843fc532562642eb58f078944f84f7e68c9b77de0bf3f26bff3a149978ff5"
+    },
+    {
+      "key": "classes3|Lcom/vk/newsfeed/k0/b/b/PostingItemPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "d6ed24c8b24e9dd47921af4694800f3de24ed55a591c0ce278afcc065b04b8e0",
+      "target_sha256": "7b3748b29b317007349910cb5bef83fc67c9393e805438b261c26fd8f95030c7"
+    },
+    {
+      "key": "classes3|Lcom/vk/newsfeed/presenters/EntriesListPresenter$h;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "610655a1f5e61689c4d550bf4d497bb8e4abb8d2d5e6583d00613fbffcc6573e",
+      "target_sha256": "5ed74d3dd8f7887883aa8612c7b6a2b7616e71908d84017fba6195a568427d31"
+    },
+    {
+      "key": "classes3|Lcom/vk/newsfeed/presenters/NewsFeedProfilePresenter$a;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "d3d9e4e3887f6669818dc9598ca58166ddb68946c2a16d68fe23ebc66cdb6444",
+      "target_sha256": "5f93ab589ba424d7b9f4982ab3f4205a32b8822737a5feed6a903263ebb11bb1"
+    },
+    {
+      "key": "classes4|Lcom/vk/notifications/NotificationsPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "06edd69d2e2b825107c9662379065ec924d832b468bd0246f8f0918d9ead2872",
+      "target_sha256": "52de10f2c1fd1ed9931649bae6b16678844947daa6436cfffeb0a41418a5403e"
+    },
+    {
+      "key": "classes4|Lcom/vk/poll/fragments/PollEditorScreen;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "822af17feb352016f97c1111a6ad428c4549dfcde254ed5432e60f1f357cc0b8",
+      "target_sha256": "2f48ba4a4a4ae8f34a0bf212d26863b681ee8f4e4bc1e151e97f7db9cbb360d9"
+    },
+    {
+      "key": "classes4|Lcom/vk/profile/ui/photos/ProfileMainPhotosPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "6f2000b787f539d3535cd45795ebf382c4852f3e6b3064ce49d7f8c7f9fc2207",
+      "target_sha256": "d36d54d074be3a3b7edd056928d6d49274bd5a4632db1e5b5549f4b61bf05c81"
+    },
+    {
+      "key": "classes4|Lcom/vk/profile/ui/photos/album_list/AlbumsListFragmentPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "5ea22d99a03ff04b8f646ffa0fce725b28422f08b66ed681734bae98a2bfe961",
+      "target_sha256": "52baa9ba7154c77fa2c00fac69bb6f054b42dec9be41f961cd8f6ed02c4c837d"
+    },
+    {
+      "key": "classes4|Lcom/vk/profile/ui/photos/photo_list/PhotoListFragmentPresenter$b;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "f7ecf262b775d19b40d44aa7d848068954c2ebbe77f982333eefc62b20c0e369",
+      "target_sha256": "deadbeb49bcae5110e992532d2142f1ce51c1e643cb404284f1b71a7df4589db"
+    },
+    {
+      "key": "classes4|Lcom/vk/profile/ui/photos/photo_list/PhotoListFragmentPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "61683bddc9fcc99a29eb46c302ee97e40557d483be041f121aa43c546dd5f7bc",
+      "target_sha256": "1c2eaf6e29de1ca5aa33dfda6e069988de8781320d2dd84b5579458576b6d0d2"
+    },
+    {
+      "key": "classes4|Lcom/vk/search/fragment/BaseSearchFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "c4cb241bfa1f5b9e86146d52ef9660f3aa5cdfc6766bbe7679ea4fdf5a6510df",
+      "target_sha256": "5ff8ae896965de127fc41a802815b2c17bb69029f569be0165adc1851e5a8c74"
+    },
+    {
+      "key": "classes4|Lcom/vk/stickers/Stickers;",
+      "mode": "preserve",
+      "replacements": 5,
+      "base_sha256": "7c547766fed3f40907d48d3605ef1b1b579f23fdef3f2f966459159e50206b6d",
+      "target_sha256": "5d59815e6798f38db82d37b4627b9309dd30fd6d4f7cf6897e9a6d9df5ba538d"
+    },
+    {
+      "key": "classes4|Lcom/vk/stickers/StickersView$a;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "6da1730a20b867289f4ceddce200080e10a8c165d21ad50d93541eeb825b9775",
+      "target_sha256": "2bbff26471572c1ba21185fd4672509450fd50582fcf200dc5fbb4d336117205"
+    },
+    {
+      "key": "classes4|Lcom/vk/stickers/StickersView;",
+      "mode": "preserve",
+      "replacements": 2,
+      "base_sha256": "b9c4fb8d23a3f21d4597a29badc331979361e985602a7f461c8849ae8329f5a9",
+      "target_sha256": "9f96f113bec9324fa23b41f52a28cbbeec07c1d434ceb4fdb15c5afe00275c21"
+    },
+    {
+      "key": "classes4|Lcom/vk/stories/view/StoryViewContainer;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "7797efe86c359501b95eeb382494aab4d1b07d6e2f780c4cb9603a4edbe85994",
+      "target_sha256": "18c60a04ceb675bec781519bb3bb7262fdb51f2028e564c97e17e6553ed1957f"
+    },
+    {
+      "key": "classes4|Lcom/vk/ui/photoviewer/MenuController$b;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "3345eaabfe01424db00c515b8b930172e6733268934449d951978754280d09e1",
+      "target_sha256": "7d13dceef02efd2ba7dc4299c857f15d73f41909f724c05e3cb0ede8a14a9105"
+    },
+    {
+      "key": "classes4|Lcom/vk/ui/photoviewer/MenuController$g;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "1f73c77cf4f6d8e1234fe79035ea5bdcb4a1dbd984fc33a48a8c8565624b3043",
+      "target_sha256": "8ad939d1cf6221543d4c5423c8dbe46e0e58c9b40a42bb54ae295dd017a8325e"
+    },
+    {
+      "key": "classes4|Lcom/vk/ui/photoviewer/MenuController$h;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "c75fd7b7f55d948aca4945d8a96a79aa56b8d340f2a06f41374dfec13bcb836e",
+      "target_sha256": "813ac87fe1a7fbdb825ec80e0e2c55fcf6800a54baefa03390aa9687ba7a0b63"
+    },
+    {
+      "key": "classes4|Lcom/vk/video/VideoAlbumsController$e;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b91e468503fe5047afe65838060aa38cb9684e4b8caf43baecebaa682fe790b8",
+      "target_sha256": "1e093192b83f58d54fa1a4fb5f262ba11cd54039abe936d62626c623935a5fe4"
+    },
+    {
+      "key": "classes4|Lcom/vk/wall/post/PostViewFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "c0e019c05588faeb60baa9d0a5042fdf94ee3038bf4eba0f6b959cd5ba3d179c",
+      "target_sha256": "43631b447d915c09556ed42799068ce983dbbb55baa0931d62381d2fd0c6361c"
+    },
+    {
+      "key": "classes4|Lcom/vk/wall/post/PostViewPresenter$i;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "3f4ffed9e856621127ced2f5768c1fb492ded5d1577b2b58925c6a1e10a5006e",
+      "target_sha256": "04bedeeaa556efde20690982f0132116b45d7a44e7ba07ff87aa52687c16e34e"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/BroadcastEvents;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "f4ea84f1ff82b03766cfa77296b22717da711ec8c360ca6b616c73272129087a",
+      "target_sha256": "79e02ee0613752698819651252de0371ad246acb4d82599f21d951e3df1f79cd"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/MenuCounterUpdater$b;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "60042b2b5cf5dd14ce3003bbe611923cd6a8ab9817641e6e65093e413d3c1b1b",
+      "target_sha256": "e4719d396d91004a60cca87e65291c7a2ee77bc325cd0d777db4d02352ede804"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/MenuCounterUpdater;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "fdf4622ebfae9d8ea33189a18fcbc99e2bdc68f1d9174fe5a28839c3fc64b394",
+      "target_sha256": "32a4056cf8708adef5914b8b1198b8fd1f32a5415b9a7a61107d78c249a781fc"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/activities/LogoutReceiver;",
+      "mode": "preserve",
+      "replacements": 2,
+      "base_sha256": "718354d2d99d56cc239582d2eee2dac261f377c85bbbc2188269cc0e9b2dfaec",
+      "target_sha256": "93e9a17e0ab0e97e4f2e1c7839bc3fdbb81f541cbd96fe09db54b40607e7cb10"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/data/Friends;",
+      "mode": "preserve",
+      "replacements": 5,
+      "base_sha256": "5e9bd5a2458e5419657c23fe9b1ec3c1f22e5a502eb2e5f98d2665a68f2d96fc",
+      "target_sha256": "e5f168ee8e2a65f00db7038c75f25a926724e2e9ceda7138f6edcf5e96486224"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/data/Games;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "667fb82e192d37e32860103e286b0cbc3123b5f27bf58e2da294f2889dad6c6e",
+      "target_sha256": "57e9864a2aaf35a7f70f53a3b2e3050843f98e5d5f8034eb14e1d8d5553b0189"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/data/Groups;",
+      "mode": "preserve",
+      "replacements": 5,
+      "base_sha256": "8235f67f0b0ed9b4103363716e863fee489f5a25ff7990481dd5df8314d739f0",
+      "target_sha256": "afc3a389895980ba442ef5340e2d41f1a2a2cc39fc052145535aebab6d533673"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/MyGamesListFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "0cd3e3e4d8a79c84c519dbc139d9790249d16ac892c44719ac51e480185dac22",
+      "target_sha256": "69d49f7209129d52221f587ae63f48acb557aba7960915bb39270eb7a7cc40d0"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/ProfileFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "1dda18922c8aa73b9d2aac57ce033cedd7ca68fe67198cde40d4a27a0a41b625",
+      "target_sha256": "e4e41fbb11b9ab627d6499040d1ba8fa4e6764358da56de9122c03bb525a098b"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/friends/FriendRequestsTabFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "1091626cb1cf25c9879713f83c78a0c5c99c37e3d1f9ea947ad4b1f3b542885e",
+      "target_sha256": "4b51bac5dfdda1d8dc12b66d8c36da3e76c901e82af9cd39081f4bdd04f4b4a0"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/friends/FriendsListFragment;",
+      "mode": "preserve",
+      "replacements": 2,
+      "base_sha256": "33b6c6b0a50c1f07f86bf54f07f8871d1ad676b836e4f2c61b2dfbb1aeaf81ea",
+      "target_sha256": "fa46f4fcb539aaa715d6964394d89c43e21d080063d21b9d8a345db7b286cfd7"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/friends/presenter/CurrentUserFriendsPresenter;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "2d7f6c4e8e0013ea610588ef303a11b3c0e17377b2dd61db54759d5b03c2ea62",
+      "target_sha256": "bdbe8d765d2f4661a305f74a2c933901950906ac306567acac675af5e263f68e"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/gifts/GiftCategoryFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "3245eabc54b6c120e48afe361f46e9d17a8af081502f091f46b92d421cd30041",
+      "target_sha256": "2ca4d17469435aaf126001fb5fe39cef630a893370bb0dba38ffae3515c8eb3c"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/gifts/GiftSendFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "5fe8aba72e751cb32e62933328c7e3702c40f6aa46cf49ca17e54d5917e62c43",
+      "target_sha256": "56784c68ec6b409289e919276e6eb86835abe129f470701fd8a6d6f378ac5f6d"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/gifts/GiftsCatalogFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "bfc5e1064e02d16b9b1d1e676a6e263d4cee323a611bfe38d402e2e77a539ab9",
+      "target_sha256": "84fa9030fcb763954cd3cec6cb9f3f12cb5a283794017efd9d16c18cc87277f6"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/market/GoodFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "8764519d60dff0f0df968d7e4bcd44549e1c031536d6371f13bc670a5d61fa08",
+      "target_sha256": "3bff83752e2ef48f47f7ef37df1b427389fb484c363113433a23068c23503e70"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/money/MoneyTransferDetailsActions$b;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "8c524fac8a29ea0ea3b2ae9875ffa0a46c000fb0094c28b29359766c12710822",
+      "target_sha256": "9567cfe83e51091e31af4f1da88f2ae9bc2fcbc6a36e7d547ca586d371a9780e"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/money/MoneyTransfersFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "3b657d2f1c54e1cc0447d08bed1b3de661181f5f508cba2d542791a2585461b3",
+      "target_sha256": "7a993d722ec326be40ab665adabff280366e43806e3ac22ec3583c99996d3be2"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/money/MoneyWebViewFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "13eccc2575e984d78a6cc00d6ff5a44218f80aaa2cd84d0381ae65122080b4d6",
+      "target_sha256": "95aaa1cf91630654c6bd2d5db2165f7629548e07cee452e0d85539b4e94e2236"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/o2/BoardTopicViewFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "66d42ea11da9ddc3b0807965edcb13f86c5e040aeb34c5c23915084a4cd0197d",
+      "target_sha256": "f6c33311ce63bf9854fd690bee711227a20155302fb353383ad3f2c41a9cb62e"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/p2/DocumentsViewFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "27af16af5103c3a243f1edd6060a4a32af84887e11eefc9d9c54a08a39f7f9e8",
+      "target_sha256": "84360c9c12c48dfd3a1b7270955fefc352c49ef8ccd2cb0c0635360de2685139"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/s2/GroupInvitesFragment$d;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "2d5178aefa0444bc46b82f484688dfa338cd61c8cd7dd752563377e81f9617c3",
+      "target_sha256": "7c5652065ef8822d0bc223618e66efc89de8a2c9cd5952fb51f5c67cf3885bde"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/s2/GroupInvitesFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "d7af769b21ac08c0b2eefbc868e4d3b2609b57ff52635979a998f6783c1d3330",
+      "target_sha256": "9d69b5ffa1deefe5be367f7b7e9612274588861049e1b90979219faa53711428"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/fragments/s2/GroupsFragment1;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "89be906bcdf07e6d98945893196e96090bb15e69ca01e7645e6103ec2051b69d",
+      "target_sha256": "6614631681b38365137b823393941e1d8a7b1550aff2d63db0367e352069b216"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/general/fragments/GameCardFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "dd86b9d1c47be6f1ad7f87ebe9331c3814b736ea6b9ae6679628919ef0c892ab",
+      "target_sha256": "6500e8c0f0c435f0ab211fd0490521b94c1d0638a9393c2810f5a92af85b08c3"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/general/fragments/GamesFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "6382d7c1757ddcf4f06451e8964c118172e14d1baeacf20ebcb3f13be2abe8dd",
+      "target_sha256": "58de91ed53305c99630a7f0791bb6e45196dc364a9db99145e9c78050d3f5413"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/general/fragments/GamesListFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b77076398bfe4d0abcfe14c377d551dd7bdeb70409f1819732212a553a956d85",
+      "target_sha256": "07f9de623fd0204a9a2cccba24145dfa791a88191e9cb6d091a77b30e9cc6a1b"
+    },
+    {
+      "key": "classes4|Lcom/vtosters/lite/general/fragments/GamesRequestFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b9153ac3dca8c5f43f80ea2377741eceab14e657228719f81b37c885e7077afd",
+      "target_sha256": "3aebdfdaa748696b40a27a055a15a2e8f6f51a71ab7ebf677631431639bb9e53"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/photos/EditAlbumFragment$d;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "5a0162c4a9b7e1b6327839eb3b133a303b15e59977019e7b922d98cdd70941fb",
+      "target_sha256": "e6016da00764bc67fb0235e302bacb50940b1d9ba271841de8fdb04a5a89fd91"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/photos/EditAlbumFragment$e;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "8ef1f55ab89504931aa8b13742145944cdc04ff31955fe29866ea7227cfa548d",
+      "target_sha256": "c6ea88e29c14aa0b755280f8a75c5df08981f6b692524b218428250b97b9f136"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/photos/PhotoAlbumListFragment$h;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "2d84303c3a8ee245e73f97f87c30046dc8eba38ae23e843044a955fbe67576c0",
+      "target_sha256": "4d06bb6b466bd3165ebb0be647685778b8bbf2aa04a871f0b88010a82e7db263"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/photos/PhotoAlbumListFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "cd8ee7c996dca6e60ed5f5e4586e34e321f6d36537e7f9773423a745bc724941",
+      "target_sha256": "6cb27e0f9d74c6fcc1aa4b5f920490503d2218fda684c5027e1d72e61fbc6dbf"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/photos/PhotoListFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "e049d5bbae7a0dc66253d1eff960cc66463150d848d638b0f3c097aa31500f08",
+      "target_sha256": "39431a1c74f46fc6f0b8dd20700a984519dcea2ae12a9a1a67f883eb1132e015"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/stickers/StickersCatalogFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "c80c615e707919132cae23373372ff56b3ff2cbdabaedf90053f58cb92940bb1",
+      "target_sha256": "fd06eefe69bf4e1897a2683da43e8c8e6bec72db8f03d626c78d4643884f098d"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/stickers/StickersDetailsFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b52969910d85904a2dce0848d9fa1f2528e00acd68a10ca96223c7defc9d5693",
+      "target_sha256": "217ff4947660e93e9d8ffb45ff981f852e9439835767dbbdc859fd6f3e9dd99c"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/stickers/StoreTabFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "7d7d006968de97bf61b7bc0ff1bafe5061fcb5c9378885f70a4432f80b041965",
+      "target_sha256": "8a3b01f5ce994f4dd7eca975b77c7882880785a32f45f16ec445e52bcb6ee246"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/y2/AddedVideosFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b09f3e5c9ff71ff1e7f701e7db502b5ed9a14044040a941a824b2f46f73aa3ce",
+      "target_sha256": "045ffc5edd8b335721e172023584a796fe8f45ae11222c18a56f3853c1efad14"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/y2/UploadedVideosFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b562976f0290636a8c7f1c6b2ad07e8532b8dd2abf4d1ea2d44d9d33949e37ce",
+      "target_sha256": "dc322079d554a7ac52ea8037452e493c0c55846f44ff9d84cf68f46ae187374a"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/fragments/y2/VideoAlbumsFragment;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "e388cc08e4a8b0c001b509930d71e77cf3032a7b24407daaf1485a17386b09c7",
+      "target_sha256": "08b9f190ce733656e43aa6259ec26299f2ae45c4aeb39658381c2c74faa65971"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/im/bridge/ImBridgesInstance;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "b4eb64b8baeceab93ee06a2ef4eabac6d4a34e7ef900fb33c9fa47f862d8bf05",
+      "target_sha256": "bff071e47a372b4efeec0cf0cf11baa2ef93fa7e1c0afa73dae8a683d3d8d20d"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/im/bridge/contentprovider/ImCompanionHelper;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "afe2ac96b9c9a4cfb81cd4face58feb88ce98fb81c0a699771fdf367103ea061",
+      "target_sha256": "e6d7d5822c0219963ac74159897c6f895a35daab9c62b1fb5b0f91abbe414dd1"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/im/bridge/contentprovider/ImPublisher;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "cb5477ee0ef6aa9c0d9b169f23a2cacb1d16af833fa8e2a58cbc3f0e14409723",
+      "target_sha256": "4b71ed6edc76abee37b0974264ac270e04bd54102d27a5c8213e0ab5ba404951"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/ui/AttachmentsEditorView;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "5e7e3bbdc94925a25179adc38c2d510c4e87164dc60502adc6db77440f187553",
+      "target_sha256": "67ce6ed25c01079ba532b99c7d859bc3f4bef1de7b065d4dcc0ceed213d22871"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/ui/WriteBar;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "09ad84e525879d54087aeedd2f5e109b0ef0ba4a389de52ae5a5e5edda19df45",
+      "target_sha256": "cfd35b1e0935c76998094d246e83c777e6cb7ddea7bc47d1feee01f5175ac4e7"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/ui/b0/q/MoneyTransferHolder$b;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "42ff080a8f00d61a67d5e454a6fb520d6b6c66e20232d7c33d7aebd16e1e757a",
+      "target_sha256": "b94d8d25854571c6eea0ad8b1146540f0c9bd6008381e6331a3ee37fb8dae8bb"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/ui/widget/MenuListView;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "9dadf5eb52c01cb30e3c47154be336df918fd44eda628ca395bcd02301b77a48",
+      "target_sha256": "ac5f3ae521d2587b61e1cb6986a41b35b0689097f49fb1f9ffca4f076ecc59ec"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/upload/UploadListener;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "9a725e2f98dfd9e237b14f56cfe918c664f61f429c1af89ac977eaf71bbbeff7",
+      "target_sha256": "3ce3571110b4485ebb5b43d068c168f9af4b7bcce582da4ff73159c9d9ff6575"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/upload/UploadUtils$g;",
+      "mode": "preserve",
+      "replacements": 4,
+      "base_sha256": "dbcaa72b64a1fb7d22f7998498f76ea0fe0d5cf79188b6b5673a8c82dd31577a",
+      "target_sha256": "119b137d1f7f55004d48861bedeb088c3eabd0ca57e7b321c0b9f9c2b3e82c7f"
+    },
+    {
+      "key": "classes5|Lcom/vtosters/lite/upload/l/ProfilePhotoUploadTask;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "82fab755528f8ef72e4df3eff27eb693d64ab4905615aed6365eb89550874814",
+      "target_sha256": "4ad61e1231ccae538b391c853089b2fe71f25a402a1c98b79a2597e6980f7995"
+    },
+    {
+      "key": "classes6|LE5;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "8de4d224ab5f8df92e587cfd0459ada74edab86a0aca27588f40b91bbe34552c",
+      "target_sha256": "74f4b67bf364d5870bc2bdca4db7a35c135ce552cef76e0ff4fc96dbd97cb7ff"
+    },
+    {
+      "key": "classes6|Lru/vtosters/hooks/PhotoViewer$1;",
+      "mode": "preserve",
+      "replacements": 1,
+      "base_sha256": "58cfb2b39718765d0c7b034020dab8c848b6541fb8b111b786095c26c2fbb802",
+      "target_sha256": "30381e7a68a30866eef1424d5d45fbd8a7fed81924259d1533a8aca3f7fb56d4"
+    }
+  ]
+}
