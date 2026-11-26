@@ -6,11 +6,29 @@
       ],
       "target_sha256": "0d263a0303a90e91545b1f22e34650c4d275191b1939e2366c1861a3a5d125d6"
     },
+    "classes2/com/vk/api/internal/chain/InternalMethodChainCall.smali": {
+      "patches": [
+        "replay_transport_classes"
+      ],
+      "target_sha256": "afc1aecd2273c22ae22a88aa79f39e1e4eb1499ac8673d871440301ecea4d712"
+    },
     "classes2/com/vk/api/internal/q/FilePartRequestBody.smali": {
       "patches": [
         "replay_stream_classes"
       ],
       "target_sha256": "1f28e45aab21aee42b11a5b0ccbf3b2cb26e747986da64bd4b3bc0bcab856e4f"
+    },
+    "classes2/com/vk/api/internal/q/InternalOkHttpExecutor.smali": {
+      "patches": [
+        "replay_transport_classes"
+      ],
+      "target_sha256": "cfa95ad793f8780d7fa7f9925e96d848d6b3bbfc3031cb60c071979b13a11aca"
+    },
+    "classes2/com/vk/api/internal/q/InternalOkHttpMethodCall.smali": {
+      "patches": [
+        "replay_transport_classes"
+      ],
+      "target_sha256": "f2210452761f7f9b64255d6797e41047869d3a963df26420ffe1393b865f6717"
     },
     "classes2/com/vk/api/sdk/VK.smali": {
       "patches": [
@@ -114,6 +132,12 @@
         "replay_error_auth_classes"
       ],
       "target_sha256": "04ac81ba9af8e4928f2bb550c69d8240d719e2118162d95b941f8430d3dba46b"
+    },
+    "classes2/com/vk/auth/api/c/OAuthHttpUrlChainCall.smali": {
+      "patches": [
+        "replay_transport_classes"
+      ],
+      "target_sha256": "2c86298a7aa6a025d53ddc24b2a3a777d7568b54ba20a4e9f624b8474aac64c3"
     },
     "classes2/com/vk/auth/api/models/AuthCredentials.smali": {
       "patches": [
@@ -960,7 +984,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 164,
+  "patch_entries": 168,
   "schema": 1,
-  "unique_inherited": 159
+  "unique_inherited": 163
 }
