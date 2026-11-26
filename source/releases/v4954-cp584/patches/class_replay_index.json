@@ -1,5 +1,11 @@
 {
   "classes": {
+    "classes2/com/vk/api/base/ApiUtils.smali": {
+      "patches": [
+        "replay_privacy_route_classes"
+      ],
+      "target_sha256": "0d263a0303a90e91545b1f22e34650c4d275191b1939e2366c1861a3a5d125d6"
+    },
     "classes2/com/vk/api/internal/q/FilePartRequestBody.smali": {
       "patches": [
         "replay_stream_classes"
@@ -127,6 +133,12 @@
         "patch_package"
       ],
       "target_sha256": "0a3f3d3164b50ba0f78378b40f92f43fc1453b1ad4085cae473756bdcce54191"
+    },
+    "classes2/com/vk/im/engine/commands/dialogs/DialogsHistoryGetArgs.smali": {
+      "patches": [
+        "replay_privacy_route_classes"
+      ],
+      "target_sha256": "2cdd813d77359789de4893c67f3c1f230c78c4585af873bd7bc3f0a3280b84d1"
     },
     "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendUncheckedJob.smali": {
       "patches": [
@@ -388,6 +400,18 @@
       ],
       "target_sha256": "04bedeeaa556efde20690982f0132116b45d7a44e7ba07ff87aa52687c16e34e"
     },
+    "classes4/com/vk/webapp/bridges/AndroidBridge.smali": {
+      "patches": [
+        "replay_privacy_route_classes"
+      ],
+      "target_sha256": "272935fa8729d4769ad2e06a078e2169a0d27a78936731faac43cb8993c7b1c6"
+    },
+    "classes4/com/vk/webapp/helpers/WebClients3.smali": {
+      "patches": [
+        "replay_privacy_route_classes"
+      ],
+      "target_sha256": "50572c894c57057bda90ab5fa61c9344d5c764c00cdfd825d6a32f60099b933b"
+    },
     "classes4/com/vtosters/lite/BroadcastEvents.smali": {
       "patches": [
         "patch_package"
@@ -411,6 +435,12 @@
         "patch_package"
       ],
       "target_sha256": "93e9a17e0ab0e97e4f2e1c7839bc3fdbb81f541cbd96fe09db54b40607e7cb10"
+    },
+    "classes4/com/vtosters/lite/api/DefaultApiProfiler.smali": {
+      "patches": [
+        "replay_privacy_route_classes"
+      ],
+      "target_sha256": "ad901aaa433c93c228189047a2abb3f04d2fedbeb46496800a197370b871bbc2"
     },
     "classes4/com/vtosters/lite/data/Friends.smali": {
       "patches": [
@@ -744,7 +774,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 128,
+  "patch_entries": 133,
   "schema": 1,
-  "unique_inherited": 123
+  "unique_inherited": 128
 }
