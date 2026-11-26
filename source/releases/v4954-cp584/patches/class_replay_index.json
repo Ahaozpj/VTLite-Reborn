@@ -152,6 +152,12 @@
       ],
       "target_sha256": "590d99ad535dc5c056a51543baba25eb9eb968dfff1e3d5a5f0c409fa0855e40"
     },
+    "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendJob.smali": {
+      "patches": [
+        "replay_message_media_classes"
+      ],
+      "target_sha256": "529151b74cff5174a210632727798ac02f96e32bd2a1166109a589e3c932e664"
+    },
     "classes3/com/vk/im/engine/internal/jobs/msg/MsgSendUncheckedJob.smali": {
       "patches": [
         "replay_reviewed_classes"
@@ -163,6 +169,18 @@
         "replay_stream_classes"
       ],
       "target_sha256": "3ad7d8ab8e310685224b9c2837bc8218aaefaa8f07deb81ab96b6694fb75b2d2"
+    },
+    "classes3/com/vk/im/engine/internal/upload/GenericUploader.smali": {
+      "patches": [
+        "replay_message_media_classes"
+      ],
+      "target_sha256": "b23682cd02edcd7b43ac74eedb6699ead137da9d92d2239d63b1d033a78a1a68"
+    },
+    "classes3/com/vk/im/engine/internal/upload/ImageUploader.smali": {
+      "patches": [
+        "replay_message_media_classes"
+      ],
+      "target_sha256": "e7f9a990f030a8b314beb8d77d59af8c51dad57bee8d99e794abdf4fc4ad5663"
     },
     "classes3/com/vk/im/ui/components/dialogs_list/DialogsListPresenter$b.smali": {
       "patches": [
@@ -798,7 +816,7 @@
       "target_sha256": "69e5fa630b85eaec369d3275fb226355d2c195848e5df129245ad648fab244ca"
     }
   },
-  "patch_entries": 137,
+  "patch_entries": 140,
   "schema": 1,
-  "unique_inherited": 132
+  "unique_inherited": 135
 }
