@@ -1,0 +1,11 @@
+# CP584 v4954 — account lifecycle source recovery
+
+Four first-party classes recovered by fresh selected-class disassembly of classes10.dex extracted from the SHA-pinned release: RebornSessionEpoch, its AccountReader interface, RebornVtostersAccountReader, RebornCaptchaAccountHooks. All four match the existing release tree and private inventory, and were absent from all original DEX slots. This is recovered Smali, not the original Java compiler input. CP271 documents the first-party bridge compilation and CP343 documents the read-only generation extension. The reader uses the host account object and its existing readiness predicate; it does not validate remote credentials. The epoch class associates local requests with account identity, generation and a fresh random nonce; the hooks notify existing lifecycle boundaries. No direct log, network, file or preferences calls found in these four classes. Only two constant strings. No assertion of whole-app privacy or full mutation coverage.
+
+Important limitation: disarmLocked calls DialogPreviewScope.accountBoundary before clearing local state, so an exception in the callback may interrupt local invalidation. This is a static concern, not a reproduced Android failure; the release has not been changed. The existing hook fallback attempts invalidation but complete fail-closed behavior under linkage/runtime failure is not proven. LegacyCaptchaEntrypoint and its nested classes remain dependencies. No new authentication requests, no CAPTCHA automation, no remote validation tests.
+
+Checks: 4/4 fresh disassembly vs inventory/release tree, 4/4 exact isolated assembly/disassembly, 4/4 absence in original tree, 266 previous class hashes rechecked (167 inherited target hashes and 99 published own candidates). APK hashes rechecked; original tree not freshly decoded. No ART or full application build. Cumulative 167/167 inherited and 103/113 own candidates, 270/280 total. Ten own candidates, resources and dependencies remain. APK and tag unchanged.
+
+Historical evidence SHA-256:
+- CP271_FIRSTPARTY_BRIDGE_RESEARCH.md: `278d44bf563e680491da3d3c79edf190822bfca47fbe58044e893dc09d439d03`
+- CP343_REAL_ACCOUNT_MUTATION_EPOCH_TWO_DEX_2.md: `5aa1c905c58646ff27b09b07160940f8f6c65602653a9d9f53e39bea9e021843`
